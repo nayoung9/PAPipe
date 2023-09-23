@@ -1,4 +1,4 @@
-# Markdown for running PAPipe (Program directory)
+# Running PAPipe
 
 **Programs/**
 
@@ -14,7 +14,7 @@
     
     ```
     # in current directory
-    bash build_Docker_image.sh
+    bash set_local_env.sh
     ```
     
 

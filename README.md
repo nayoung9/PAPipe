@@ -11,14 +11,18 @@
 
 1. Raw read trimming
     1. Trim galore!
+
 2. Read mapping (Two options)
     1. BWA
     2. Bowtie2
+
 3. Variant calling (Three options)
     1. GATK3
     2. GATK4
     3. BCFtools call
+
 4. Postprocessing
+
 5. 11 popular Population genetic analysis 
     1. principal component analysis (Plink 1.9)
     2. PCA projection analysis (Plink 2)
@@ -52,10 +56,7 @@ git clone https://github.com/jkimlab/PAPipe.git
     This commands will automatically install the requirements and print the paths can be used as parameter file directly 
     
 - Or you can use PAPipe on docker without having to prepare the environment.
-    
-    → [How to use PAPipe on docker](https://github.com/nayoung9/PAPipe#using-docker:~:text=txt%20%2D%20%2Do%20OUTDIR-,Using%20Docker,-%23%20Change%20directory)  
-    
-    → **Recommended**
+    → [How to use PAPipe on docker](https://github.com/nayoung9/PAPipe#using-docker)  
     
 - Check out [Requirements](https://github.com/nayoung9/PAPipe/tree/main/Requirements) for details
 
