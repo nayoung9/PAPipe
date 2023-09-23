@@ -1,0 +1,1 @@
+docker build -t PAPipe_image ./ &> log_image_build

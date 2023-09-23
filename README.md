@@ -53,11 +53,11 @@ git clone https://github.com/jkimlab/PAPipe.git
     
 - Or you can use PAPipe on docker without having to prepare the environment.
     
-    → [How to use PAPipe on docker](https://github.com/nayoung9/PAPipe#using-docker)  
+    → [How to use PAPipe on docker](https://github.com/nayoung9/PAPipe#using-docker:~:text=txt%20%2D%20%2Do%20OUTDIR-,Using%20Docker,-%23%20Change%20directory)  
     
     → **Recommended**
     
-- Check out ./[Requirements](https://github.com/nayoung9/PAPipe/tree/main/Requirements) for details
+- Check out [Requirements](https://github.com/nayoung9/PAPipe/tree/main/Requirements) for details
 
 ### Run PAPipe
 
