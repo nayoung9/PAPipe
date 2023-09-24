@@ -139,13 +139,13 @@ Lift of required parameters for running each steps of PAPipe
 
 The parameter file should include this section for every execution.
 
-    ```
-    #### Global ####
-    outdir = ./out
-    threads = 20
-    memory = 10
-    step = 0-4
-    ```
+```
+#### Global ####
+outdir = ./out
+threads = 20
+memory = 10
+step = 0-4
+```
 
 - step information
     - 0: Read QC
@@ -156,40 +156,40 @@ The parameter file should include this section for every execution.
 
 **Running ReadQC step in PAPipe** 
 
-    ```
-    #### ReadQC ####
-    ### Program path ###
-    fastqc_path  = /mss1/programs/titan/FastQC/fastqc
-    multiqc_path  = ~/.local/bin/multiqc
-    Trim_galore_path = /mss3/RDA_Phase2/programs/TrimGalore-0.6.0/trim_galore
-    path_to_cutadapt =  ~/.local/bin/cutadapt
+```
+#### ReadQC ####
+### Program path ###
+fastqc_path  = /mss1/programs/titan/FastQC/fastqc
+multiqc_path  = ~/.local/bin/multiqc
+Trim_galore_path = /mss3/RDA_Phase2/programs/TrimGalore-0.6.0/trim_galore
+path_to_cutadapt =  ~/.local/bin/cutadapt
 
-    ### optional parameters ###
-    quality INT
-    adapter STRING
-    ```
+### optional parameters ###
+quality INT
+adapter STRING
+```
 
-    **Running ReadMapping step in PAPipe** 
+**Running ReadMapping step in PAPipe** 
 
-    ```
-    #### ReadMapping ####
-    ### Program path ###
-    OPTION = 1
-    BWA = [path_to_bwa]/bwa
-    BOWTIE2 = [path_to_bowtie2]/bowtie2
-    SAMTOOLS = [path_to_samtools]/samtools
-    PICARD = [path_to_picard]/picard.jar
-    JAVA = [path_to_java]/java
+```
+#### ReadMapping ####
+### Program path ###
+OPTION = 1
+BWA = [path_to_bwa]/bwa
+BOWTIE2 = [path_to_bowtie2]/bowtie2
+SAMTOOLS = [path_to_samtools]/samtools
+PICARD = [path_to_picard]/picard.jar
+JAVA = [path_to_java]/java
 
-    ### Data path ###
-    Reference = [path_to_reference_genome]/[...].fa
+### Data path ###
+Reference = [path_to_reference_genome]/[...].fa
 
-    ### optional parameters ###
-    indexing_option_line = ""
-    mapping_option_line = ""
-    markduplicate_option_line = ""
-    readgrouping_option_line = ""
-    ```
+### optional parameters ###
+indexing_option_line = ""
+mapping_option_line = ""
+markduplicate_option_line = ""
+readgrouping_option_line = ""
+```
 
 - **ReadMapping** option information
     - 1: Bwa
@@ -197,25 +197,25 @@ The parameter file should include this section for every execution.
 
 **Running VariantCalling step in PAPipe** 
 
-    ```
-    #### VariantCalling ####
-    ### Program path ###
-    OPTION = 2
-    PICARD = [path_to_picard]/picard.jar
-    SAMTOOLS = [path_to_samtools]/samtools
-    BCFTOOLS = [path_to_bcftools]/bcftools
-    VCFTOOLS = [path_to_vcftools]/vcftools
-    GATK3.8 = [path_to_gatk3]/gatk-package-distribution-3.8-1.jar
-    GATK4.0 = [path_to_gatk4]/gatk
-    JAVA = [path_to_java]/java
+```
+#### VariantCalling ####
+### Program path ###
+OPTION = 2
+PICARD = [path_to_picard]/picard.jar
+SAMTOOLS = [path_to_samtools]/samtools
+BCFTOOLS = [path_to_bcftools]/bcftools
+VCFTOOLS = [path_to_vcftools]/vcftools
+GATK3.8 = [path_to_gatk3]/gatk-package-distribution-3.8-1.jar
+GATK4.0 = [path_to_gatk4]/gatk
+JAVA = [path_to_java]/java
 
-    ### Data path ###
-    Reference = [path_to_reference_genome]/[...].fa
-    DBSNP = [path_to_dbsnp_variants]/[...].vcf.gz
+### Data path ###
+Reference = [path_to_reference_genome]/[...].fa
+DBSNP = [path_to_dbsnp_variants]/[...].vcf.gz
 
-    ### Default ###
-    VCF_prefix = Cows
-    ```
+### Default ###
+VCF_prefix = Cows
+```
 
 - **VariantCalling** option information
     - 1: GATK3
@@ -224,19 +224,18 @@ The parameter file should include this section for every execution.
 
 **Running Postprocessing step in PAPipe** 
 
-    ```
-    
-    ####               Postprocessing               ####
-    ### Program path ###
-    Plink= [path_to_plink]/plink
-    VCFTOOLS = [path_to_vcftools]/vcftools
+```
+####               Postprocessing               ####
+### Program path ###
+Plink= [path_to_plink]/plink
+VCFTOOLS = [path_to_vcftools]/vcftools
 
-    ###             Default             ###
-    chr-set = [total chromosome number]
-    geno = 0.01
-    maf = 0.05
-    hwe = 0.000001
-    ```
+###             Default             ###
+chr-set = [total chromosome number]
+geno = 0.01
+maf = 0.05
+hwe = 0.000001
+```
 
 **Running PopulationAnalysis step in PAPipe** 
 
