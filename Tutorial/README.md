@@ -223,19 +223,18 @@ VCF_prefix = Cows
     - 3: BCFtools
 
 **Running Postprocessing step in PAPipe** 
+    ```
+    ####               Postprocessing               ####
+    ### Program path ###
+    Plink= [path_to_plink]/plink
+    VCFTOOLS = [path_to_vcftools]/vcftools
 
-```
-####               Postprocessing               ####
-### Program path ###
-Plink= [path_to_plink]/plink
-VCFTOOLS = [path_to_vcftools]/vcftools
-
-###             Default             ###
-chr-set = [total chromosome number]
-geno = 0.01
-maf = 0.05
-hwe = 0.000001
-```
+    ###             Default             ###
+    chr-set = [total chromosome number]
+    geno = 0.01
+    maf = 0.05
+    hwe = 0.000001
+    ```
 
 **Running PopulationAnalysis step in PAPipe** 
 
