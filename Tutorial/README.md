@@ -29,7 +29,7 @@ PAPipe requires three parameter files below to execute
 - However, for user convenience, we have also implemented an additional parameter-builder web interface, allowing you to generate parameters more easily through this website.
 
 <aside>
-💡 Check out our [Parameter generator](http://bioinfo.konkuk.ac.kr/practice/nayoung/PAPipe/parameter_builder/jm_index5.html) !
+💡 Check out our  Parameter generator (http://bioinfo.konkuk.ac.kr/practice/nayoung/PAPipe/parameter_builder/jm_index5.html) !
 
 </aside>
 
@@ -42,7 +42,7 @@ PAPipe requires three parameter files below to execute
 **From raw reads or trimmed reads** 
 
 ```
-**#### ReadMapping ####**
+#### ReadMapping ####
 
 ### DNA-seq data path(input file of ReadMapping) ###
 # Paired-end read pairs
@@ -60,7 +60,7 @@ PAPipe requires three parameter files below to execute
 **From read alignments**
 
 ```
-**#### VariantCalling ####**
+#### VariantCalling ####
 
 ### Bam file path(input file of ReadMapping or Varaint Calling) ###
 # <Hanwoo_Hanwoo1> => RGSM name (Before read grouping in ReadMapping step, format:(BreedName)_(BreedName)(Number), example : Hanwoo_Hanwoo1)
@@ -74,7 +74,7 @@ PAPipe requires three parameter files below to execute
 **From variant call data, requires post-processing**
 
 ```
-**#### Postprocessing ####**
+#### Postprocessing ####
 
 ### Vcf file path(input file of Postprocessing) ###
 # Path of vcf file
@@ -94,7 +94,7 @@ PAPipe requires three parameter files below to execute
 **From variant call data, already prepared postprocessed data**
 
 ```
-**#### Population ####**
+#### Population ####
 
 #### If you take the Effective size step in Population analysis, write the BAM files path ####
 ### BAM ###
@@ -421,7 +421,6 @@ hwe = 0.000001
         ```
         
     11. **Fixation index analysis (Fst)**
-        
         ```
         #### Fst ####
         ON/OFF = ON
