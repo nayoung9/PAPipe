@@ -1,4 +1,5 @@
 # Prepare the paramater files to run PAPipe
+
 ### Parameter files to prepare
 
 ---
@@ -18,6 +19,8 @@ PAPipe requires three parameter files below to execute
     Containing parameters and environment paths to run the PAPipe and incorporated population analyses
     
 
+---
+
 - By default, PAPipe is ready to receive raw paired-end reads from all individuals for population analysis.
 - As PAPipe supports various analysis subsets, users can perform population analysis from their available data, including trimmed reads, read alignments, and variant calls, in addition to raw reads.
 - You can configure `main.input.txt` according to user input, and similarly, `main.param.txt` should be set by the user to match the subset range they intend to analyze.
@@ -32,9 +35,9 @@ PAPipe requires three parameter files below to execute
 
 ### 
 
-### main.input.txt
-
 ---
+
+### main.input.txt
 
 **From raw reads or trimmed reads** 
 
@@ -112,9 +115,9 @@ PAPipe requires three parameter files below to execute
 ## Input file of Population analysis ##
 ```
 
-### main.sample.txt
-
 ---
+
+### main.sample.txt
 
 List of sample-sex-population information per single line 
 
@@ -126,9 +129,9 @@ BBreed1 U        Bbreed
 BBreed2 U        Bbreed
 ```
 
-### main.param.txt
-
 ---
+
+### main.param.txt
 
 Lift of required parameters for running each steps of PAPipe
 
