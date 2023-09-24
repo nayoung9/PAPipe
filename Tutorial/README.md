@@ -225,6 +225,7 @@ The parameter file should include this section for every execution.
 **Running Postprocessing step in PAPipe** 
 
     ```
+    
     ####               Postprocessing               ####
     ### Program path ###
     Plink= [path_to_plink]/plink
