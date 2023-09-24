@@ -1,6 +1,6 @@
-# Running PAPipe
+# Prepare the environment to run PAPipe
 
-**Programs/**
+### Programs
 
 - contains programs required to run PAPipe
 - In this directory, PAPipe has been configured to automatically set up and incorporate programs that would otherwise pose difficulties for users due to legacy or environment-related requirements, making them easily accessible and usable.
