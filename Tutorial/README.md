@@ -197,7 +197,7 @@ readgrouping_option_line = ""
 
 **Running VariantCalling step in PAPipe** 
 
-```
+    ```
 #### VariantCalling ####
 ### Program path ###
 OPTION = 2
@@ -223,6 +223,7 @@ VCF_prefix = Cows
     - 3: BCFtools
 
 **Running Postprocessing step in PAPipe** 
+    
     ```
     ####               Postprocessing               ####
     ### Program path ###
