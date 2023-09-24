@@ -40,6 +40,7 @@ PAPipe requires three parameter files below to execute
 ### main.input.txt
 
 **From raw reads or trimmed reads** 
+[example.main.input.01.txt](https://github.com/nayoung9/PAPipe/blob/main/Tutorial/main.input.01.txt)  
 
 ```
 #### ReadMapping ####
@@ -58,6 +59,7 @@ PAPipe requires three parameter files below to execute
 ```
 
 **From read alignments**
+[example.main.input.02.txt](https://github.com/nayoung9/PAPipe/blob/main/Tutorial/main.input.02.txt)  
 
 ```
 #### VariantCalling ####
@@ -72,6 +74,7 @@ PAPipe requires three parameter files below to execute
 ```
 
 **From variant call data, requires post-processing**
+[example.main.input.03.txt](https://github.com/nayoung9/PAPipe/blob/main/Tutorial/main.input.03.txt)  
 
 ```
 #### Postprocessing ####
@@ -92,6 +95,7 @@ PAPipe requires three parameter files below to execute
 ```
 
 **From variant call data, already prepared postprocessed data**
+[example.main.input.04.txt](https://github.com/nayoung9/PAPipe/blob/main/Tutorial/main.input.04.txt)  
 
 ```
 #### Population ####
@@ -118,6 +122,7 @@ PAPipe requires three parameter files below to execute
 ---
 
 ### main.sample.txt
+[example.main.sample.txt](https://github.com/nayoung9/PAPipe/blob/main/Tutorial/main.sample.txt)  
 
 List of sample-sex-population information per single line 
 
@@ -133,7 +138,9 @@ BBreed2 U        Bbreed
 
 ### main.param.txt
 
-Lift of required parameters for running each steps of PAPipe
+Lift of required parameters for running each 
+[example.main.param.txt](https://github.com/nayoung9/PAPipe/blob/main/Tutorial/main.param.txt)  
+
 
 **Global options running PAPipe** 
 
