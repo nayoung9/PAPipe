@@ -50,7 +50,6 @@ docker image ls
 ```bash
 cd PAPipe/TEST/
 docker run -v [absolute path of .../PAPipe/TEST/]:/RUN_DOCKER/  -it pap_docker:latest
-cd /RUN_DOCKER/docker_test/
 ```
 
 **Run PAPipe in the docker container** 
