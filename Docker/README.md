@@ -29,7 +29,7 @@ tar -zxvf test_data.tar.gz
 
 ```bash
 cd PAPipe/Docker/
-docker build ./ &> docker.build.log
+docker build -t pap_docker:latest ./ &> docker.build.log
 
 #Check if the image load well 
 docker image ls 
