@@ -79,7 +79,7 @@ PAPipe requires the following three parameter files
 - main_input.txt: setting for input data files
 - main_param.txt: controlling parameters for PAPipe including various tools in PAPipe
 
-The aboev three files must be placed in the above "RUN_DOCKER" directory. 
+The above three files must be placed in the above "RUN_DOCKER" directory. 
 
 You can easily generate the parameter files using our [parameter file genetator].(http://bioinfo.konkuk.ac.kr/PAPipe/parameter_builder/)
 
