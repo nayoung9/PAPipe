@@ -17,11 +17,11 @@
 
 **Parameter section**
 
-- Parameter values used for this run can be seen by clicking the 
-
+- Parameter values used for this run can be seen by clicking the "Parameters"
+- The following example shows the parameter values used for the principal component analysis
 
 ![fig1.png](../../figures/fig_rb_2.png)
 
-The parameters used during program execution are initially hidden, and clicking the corresponding button reveals the options and details used during the execution.
+
 
 Below the parameter information, webpage provides both server-side, execution location path or webpage based relative path of the results allowing users to easily verify the exact location of specific results.
