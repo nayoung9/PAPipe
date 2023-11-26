@@ -105,12 +105,25 @@
 
 ### Population setting for input files
 
+<p align="center"><img src="../figures/fig_pg6.png" width="70%"></p>
+
+A population name is assigned to each input data file in this part
+
+#### Requirements
+
+- Population names must be given in the "Population setting" texbox as described above
+- The names of samples and input files must be given in the "Input file setting" textbox as described above
+
+#### Population setting 
+
+- Click the "Population setting for input files" button to display the population setting table as shown above
+
 - After entering the necessary file names and sample information, clicking the 'Population Setting for Input Files' button generates a table that includes sample-specific information and select boxes for assigning population and sex information.
 - Users can assign the groups to which the entered samples belong and specify the gender of each sample within this table.
 - Users can directly modify the select box for each row, or they can select multiple rows, click the 'Apply Population' or 'Apply Sex' button at the bottom, and modify information for multiple sample data entries.
 - Clicking on a specific row in the table will make it bold, indicating that the row is selected. If you hold down the shift key while clicking on the next row you want to select, all rows in the range between the two clicked rows will be selected. You can then apply specific population information using the 'Apply Population' button and assign specific sex information using the 'Apply Sex' button for the selected range.
 
-<p align="center"><img src="../figures/fig_pg6.png" width="70%"></p>
+
 
 - In the example below, if you choose 'None' in the bottom selection box for the selected rows and click the 'Apply Sex' button, you can modify the gender values for all selected rows from 'Female' to 'None'.
 
