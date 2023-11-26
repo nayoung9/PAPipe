@@ -11,15 +11,18 @@
 
 ### "Load parameter for test data" button
 
-Example parameter values for a test data are loaded in each field. 
+- Example parameter values for a test data are loaded in each field. 
 
 ### "Clear" button
 
-Reset all parameter values. 
+- Reset all parameter values. 
 
 ### Global parameters
 
-- This is the section where parameters required for the global execution of the pipeline are received.
+#### (1) Reference genome assembly file
+
+- The name of a genome assembly file (gzip-compressed FASTA) of a reference species. 
+- Example: pig.fa.gz
 
 ### Population setting
 
