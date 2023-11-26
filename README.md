@@ -21,6 +21,21 @@
     - Fixation index analysis (by [VCFtools](https://vcftools.sourceforge.net/))
 
 ---
+### Install a Docker Engine (Need root permission)
+
+Skip if your machine already has the engine ([Installation document](https://docs.docker.com/engine/install/)). 
+
+```bash
+curl -fsSL https://get.docker.com/ | sudo sh
+```
+
+### Add a Docker user to the docker group (Need root permission)
+
+Skip if your account is already added in the docker group
+
+```bash
+sudo usermod -aG docker $USER 	
+```
 
 ### Install PAPipe image
 
