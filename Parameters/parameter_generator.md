@@ -51,7 +51,7 @@ PAPipe alleviates the effort of creating complex parameter files by providing a 
 
 - In the example below, if you choose 'None' in the bottom selection box for the selected rows and click the 'Apply Sex' button, you can modify the gender values for all selected rows from 'Female' to 'None'.
 
-![Untitled](Documentation%20for%20Parameter%20File%20Generation%20Webpag%20417125b9d8eb4ad0bc0a1cfff5e3fc07/Untitled%206.png)
+![Untitled](../figures/fig_pg6.png)
 
 ### Parameter settting
 
@@ -59,7 +59,7 @@ PAPipe alleviates the effort of creating complex parameter files by providing a 
 - The parameters for the pipeline that need to be entered depend on the selected 'Begin analysis from' option at the top. This is automatically reflected on the webpage, eliminating the need for the user to consider this manually.
 - PAPipe provides two options for read alignment and three options for variant calling. While PAPipe offers default execution, it also caters to users requiring advanced options by providing input forms for detailed parameters at each step.
 
-![Untitled](Documentation%20for%20Parameter%20File%20Generation%20Webpag%20417125b9d8eb4ad0bc0a1cfff5e3fc07/Untitled%207.png)
+![Untitled](../figures/fig_pg7.png)
 
 ### Population genetic analysis
 
@@ -67,7 +67,7 @@ PAPipe alleviates the effort of creating complex parameter files by providing a 
 - Upon selecting each analysis, a user-customizable parameter input form for conducting that specific analysis appears.
 - The form is typically pre-filled with default values for program execution.
 
-![Untitled](Documentation%20for%20Parameter%20File%20Generation%20Webpag%20417125b9d8eb4ad0bc0a1cfff5e3fc07/Untitled%208.png)
+![Untitled](../figures/fig_pg8.png)
 
 ### PAPipe-extension
 
@@ -76,22 +76,22 @@ PAPipe alleviates the effort of creating complex parameter files by providing a 
 - PAPipe generates PCA plots for all pairwise PC pairs that can be created using all the PCs reaching the target variance.
 - User can set the target explained variance using parameters such as 'Objective sum of the proportion of variance explained (%)' or 'Max PC,' or explicitly specify the PCs used for visualization.
 
-![Untitled](Documentation%20for%20Parameter%20File%20Generation%20Webpag%20417125b9d8eb4ad0bc0a1cfff5e3fc07/Untitled%209.png)
+![Untitled](../figures/fig_pg9.png)
 
 **Repetitive execution for several analyses**
 
 - To facilitate comprehensive analysis, PAPipe allows for the repetitive execution of the same analysis with different parameters.
 - In the Population tree analysis, when given the 'm' parameter, the analysis will be repetitively executed for values ranging from 0 to the specified 'm' parameter.
 
-![Untitled](Documentation%20for%20Parameter%20File%20Generation%20Webpag%20417125b9d8eb4ad0bc0a1cfff5e3fc07/Untitled%2010.png)
+![Untitled](../figures/fig_pg10.png)
 
 - In Population Structure Analysis, the analysis is repetitively performed for values ranging from the minimum value of 'k' (2) to the specified 'k', returning results for each iteration.
 
-![Untitled](Documentation%20for%20Parameter%20File%20Generation%20Webpag%20417125b9d8eb4ad0bc0a1cfff5e3fc07/Untitled%2011.png)
+![Untitled](../figures/fig_pg11.png)
 
 - For Linkage Disequilibrium Decay Analysis, you can provide multiple values for the 'maxdist' parameter, separated by commas. PAPipe returns results for each execution with different 'maxdist' values.
 
-![Untitled](Documentation%20for%20Parameter%20File%20Generation%20Webpag%20417125b9d8eb4ad0bc0a1cfff5e3fc07/Untitled%2012.png)
+![Untitled](../figures/fig_pg12.png)
 
 **Default Fst and user combination**
 
@@ -100,4 +100,4 @@ PAPipe alleviates the effort of creating complex parameter files by providing a 
 - PAPipe also performs the analysis by targeting one specific population from all the entered populations and comparing it against the rest of the populations as a control group. This is done by default.
 - In addition, if the user has specific population combinations they want to compare, they can use the 'User Setting' at the bottom to add them.
 
-![Untitled](Documentation%20for%20Parameter%20File%20Generation%20Webpag%20417125b9d8eb4ad0bc0a1cfff5e3fc07/Untitled%2013.png)
+![Untitled](../figures/fig_pg13.png)
