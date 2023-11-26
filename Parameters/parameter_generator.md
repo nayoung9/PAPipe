@@ -24,6 +24,37 @@
 - The name of a genome assembly file (gzip-compressed FASTA) of a reference species. 
 - Example: pig.fa.gz
 
+#### (2) Reference dbSNP file (optional)
+
+- The dbSNP file (gzip-compressed VCF) of a reference species.
+- Optional parameter
+- Example: pig.vcf.gz
+
+#### (3) Total number of chromosomes in the reference genome
+
+- Total number of chromosomes (including sex chromosomes) of in the reference genome.
+- Example: 23
+
+#### (4) Number of autosomes in the reference genome
+
+- Total number of autosomes in the reference genome.
+- Example: 21
+
+#### (5) Names of sex chromosomes in the reference genome (optional)
+
+- The list of the names of sex chromosomes in the reference genome.
+- Comma-separated without space
+- Optional parameter
+- Example: X,Y
+
+#### (6) Name of output directory
+
+- The name of output directory
+
+#### (7) Threads
+
+- The number of threads for parallel execution
+
 ### Population setting
 
 - In this section, the input is taken for the complete population list to be used in the analysis.
