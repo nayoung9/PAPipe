@@ -1,4 +1,4 @@
-# Results browser
+# Analysis result browser
 
 ### Generate the Result browsing webpage
 
