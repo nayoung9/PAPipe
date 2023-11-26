@@ -50,7 +50,7 @@ docker image ls
 
 ### Run PAPipe
 
-**Setting local input directory for running the PAPipe** 
+**Setting local input directories (Caution: do not change the names and the directory structure)** 
 
 ```bash
 mkdir RUN_DOCKER/
@@ -63,23 +63,34 @@ mkdir ref/
 mkdir input/
 ```
 
-- Set user reference data in `…/RUN_DOCKER/data/ref`
-    - reference genome assembly (~fa.gz)
-    - reference DBSNP vcf (~vcf.gz)
-- Set user input data in `.../RUN_DOCKER/data/input`
-    - Reads or alignments should be in the subdirectory named as user input population names
-        - `.../RUN_DOCKER/data/input/population1/`
-        - `.../RUN_DOCKER/data/input/population2/`
+- Place the following two files of a reference species in `RUN_DOCKER/data/ref/`
+    - Genome assembly file (gzip-compressed FASTA file with an extension .fa.gz)
+    - dbSNP file vcf (gzip-compressed VCF file with an extension .vcf.gz)
+- Place all other input data (read sequence files, read mapping files, or variant calling files) in `RUN_DOCKER/data/input/`
+    - First, create separate directory for each population (one per population) in the "input" directory
+    - Then, place files of each population in its directory (example below)
+        - Files for Angus in `RUN_DOCKER/data/input/Angus/`
+        - Files for Jersey in `RUN_DOCKER/data/input/Jersey/`
 
-**Running docker container mounting local data directory** 
+**Preparing parameter files** 
+
+PAPipe requires the following three parameter files
+
+- main_sample.txt: setting for populations and samples 
+- main_input.txt: setting for input data files
+- main_param.txt: controlling parameters for PAPipe including various tools in PAPipe
+
+The aboev three files must be placed in the above "RUN_DOCKER" directory. 
+
+You can easily generate the parameter files using our [parameter file genetator].(http://bioinfo.konkuk.ac.kr/PAPipe/parameter_builder/)
+
+Check out more details about the parameter files [here](./Parameters/parameter_generator.md).
+
+**Creating a docker container that mounts the above "RUN_DOCKER" directory** 
 
 ```bash
-docker run -v [absolute path of local RUN_DOCKER/]:/RUN_DOCKER/  -it pap_docker:latest
+docker run -v [absolute path of the "RUN_DOCKER" directory]:/RUN_DOCKER/  -it pap_docker:latest
 ```
-
-→ You can generate the parameter file easily at here : [PAPipe Parameter genetator](http://bioinfo.konkuk.ac.kr/PAPipe/parameter_builder/)
-
-→ Check out more details about parameter files : [Parameters](./Parameters/parameter_generator.md)
 
 **Running PAPipe inside the docker container** 
 
