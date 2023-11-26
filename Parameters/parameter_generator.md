@@ -130,8 +130,6 @@ A population name is assigned to each input data file in this part.
 
 ### Population genetic analysis
 
-아래 그림들 PLINK 표기 수정된 그림으로 대체 (그림들 전체 중 해당되는 그림 모두 대체)
-
 <p align="center"><img src="../figures/fig_pg8.png" width="70%"></p>
 
 - A total of 11 population genetic analyses can be simultaneously run by using the on/off button shown above
