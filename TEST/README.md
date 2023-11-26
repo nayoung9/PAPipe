@@ -67,6 +67,6 @@ Use own familiar methods, take the generated whole \[web\] directory to the loca
 
 ```bash
 # Run on the local terminal 
-For example (using scp): 
+# For example (using scp): 
 scp user@host_address:[web directory path in server] [proper local path to download the population analysis results]
 ```
