@@ -31,7 +31,7 @@ wget http://bioinfo.konkuk.ac.kr/PAPipe/test_data.tar.gz
 tar -zxvf test_data.tar.gz
 ```
 
-**5. Creating a docker container that mounts the directory containing Tutorial data and parameters** 
+**5. Creating a docker container that mounts the directory containing the test data** 
 
 Need to use the absolute path of the "test_data" directory.
 
