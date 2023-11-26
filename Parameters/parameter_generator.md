@@ -135,11 +135,14 @@ A population name is assigned to each input data file in this part.
 
 ### Population genetic analysis
 
-- PAPipe supports 11 population genetic analyses. Users can selectively choose and execute the analyses they need during the analysis.
-- Upon selecting each analysis, a user-customizable parameter input form for conducting that specific analysis appears.
-- The form is typically pre-filled with default values for program execution.
+아래 그림 PLINK 표기 수정된 그림으로 대체
 
 <p align="center"><img src="../figures/fig_pg8.png" width="70%"></p>
+
+- A total of 11 population genetic analyses can be simultaneously run by using the on/off button shown above
+
+
+
 
 ### PAPipe-extension
 
