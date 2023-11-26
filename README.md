@@ -124,5 +124,7 @@ After successfully running the above commands, follow the two steps below to ope
 
 If your machine supports a graphic user interface, you can directly go into the "web" directory and open the "index.html" file without downloading the "web" directory into your personal computer. 
 
+Check out more details about the generated HTML pages here. 
+
 ---
 
