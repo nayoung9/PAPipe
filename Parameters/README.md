@@ -29,7 +29,7 @@ PAPipe requires three parameter files below to execute
 
 ---
 
-💡 Check out our [Parameter generator webpage](http://bioinfo.konkuk.ac.kr/PAPipe/parameter_builder/)!
+💡 Check out our [Parameter generator webpage](http://bioinfo.konkuk.ac.kr/PAPipe/parameter_builder/) and [Documentation](./parameter_generator.md)!
 
 ---
 
