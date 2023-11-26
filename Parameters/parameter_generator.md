@@ -11,38 +11,38 @@
 
 ### "Load parameter for test data" button
 
-- Example parameter values for a test data are loaded in each field. 
+- Example parameter values for a test data are loaded in each field 
 
 ### "Clear" button
 
-- Reset all parameter values. 
+- Reset all parameter values 
 
 ### Global parameters
 
 #### (1) Reference genome assembly file
 
-- The name of a genome assembly file (gzip-compressed FASTA) of a reference species. 
+- The name of a genome assembly file (gzip-compressed FASTA) of a reference species
 - Example: pig.fa.gz
 
 #### (2) Reference dbSNP file (optional)
 
-- The dbSNP file (gzip-compressed VCF) of a reference species.
+- The dbSNP file (gzip-compressed VCF) of a reference species
 - Optional parameter
 - Example: pig.vcf.gz
 
 #### (3) Total number of chromosomes in the reference genome
 
-- Total number of chromosomes (including sex chromosomes) of in the reference genome.
+- Total number of chromosomes (including sex chromosomes) of in the reference genome
 - Example: 23
 
 #### (4) Number of autosomes in the reference genome
 
-- Total number of autosomes in the reference genome.
+- Total number of autosomes in the reference genome
 - Example: 21
 
 #### (5) Names of sex chromosomes in the reference genome (optional)
 
-- The list of the names of sex chromosomes in the reference genome.
+- The list of the names of sex chromosomes in the reference genome
 - Comma-separated without space
 - Optional parameter
 - Example: X,Y
@@ -57,8 +57,9 @@
 
 ### Population setting
 
-- In this section, the input is taken for the complete population list to be used in the analysis.
-- Enter one population name per line.
+- Names of populations
+- One population name per line
+- 아래에 test data population name 채워진 그림 부분 추가 후 이 글 삭제
 
 ### Begin analysis from
 
