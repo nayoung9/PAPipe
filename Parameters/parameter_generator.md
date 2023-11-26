@@ -70,8 +70,7 @@
 
 #### From read QC (you have raw reads)
 
-- Raw sequencing files are prepared
-- Begin analysis from read QC and trimming
+- You have raw sequencing files and therefore you want to begin analysis from read QC and trimming
 - In the "Input file setting" textbox, a sample name and corresponding sequencing file must be set (one pair per line)
 - Only paired-end sequencing data is supported
 - Sequencing files must be gzip-compressed fastq files
