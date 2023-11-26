@@ -1,7 +1,5 @@
 # Analysis result browser
 
-## Main web interface
-
 ![fig1.png](../../figures/fig_rb_1.png)
 
 **"Date" drop-down box**
