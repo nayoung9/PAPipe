@@ -85,19 +85,29 @@ You can easily generate the parameter files using our [parameter file genetator]
 
 Check out more details about the parameter file generator [here](./Parameters/parameter_generator.md).
 
-**Creating a docker container that mounts the above "RUN_DOCKER" directory** 
+**Creating a Docker container that mounts the above "RUN_DOCKER" directory** 
 
 ```bash
 docker run -v [absolute path of the "RUN_DOCKER" directory]:/RUN_DOCKER/  -it pap_docker:latest
 ```
 
-**Running PAPipe inside the docker container** 
+**Running PAPipe inside the Docker container** 
 
 ```bash
 # Run in the docker container
 cd /RUN_DOCKER/
 python3 /PAPipe/bin/main.py  -P ./main_param.txt  -I ./main_input.txt -A ./main_sample.txt &> ./log
 ```
+
+**Generating HTML pages for browsing analysis results** 
+
+```bash
+# Run in the docker container
+perl /PAPipe/bin/webEnvSet.pl ./out &> webenvset.log # ./out is the output directory set in the PAPipe parameter file
+cd ./out/web/
+python3 /PAPipe/bin/html/html/select_input.py /PAPipe/bin/html/html/pre_index.html &> ./webgen.log
+```
+
 
 ---
 
