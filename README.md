@@ -38,7 +38,7 @@ Skip if your account is already added in the docker group
 sudo usermod -aG docker $USER 	
 ```
 
-### Install PAPipe image
+### Install the PAPipe Docker image
 
 ```bash
 wget http://bioinfo.konkuk.ac.kr/PAPipe/bin/PAPipe.tar.gz
