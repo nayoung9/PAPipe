@@ -71,7 +71,7 @@
 #### From read QC (you have raw reads)
 
 - You have raw sequencing files and therefore you want to begin analysis from read QC and trimming
-- In the "Input file setting" textbox, a sample name and corresponding sequencing file must be given (one pair per line)
+- In the "Input file setting" textbox, the names of a sample and its corresponding sequencing file must be given (one pair per line)
 - Only paired-end sequencing data is supported, therefore for one sample, two read files (one for the first reads and the other for the second reads) must be specified in two different lines
 - Sequencing files must be gzip-compressed fastq files
 - 아래 그림을 실제 data 가 채워진 (test data 활용) 그림으로 바꾸고 이 글 삭제
@@ -80,7 +80,7 @@
 #### From read mapping (you have trimmed reads)
 
 - You have trimmed sequencing files and therefore you want to begin analysis from read mapping (skip read QC and trimming)
-- In the "Input file setting" textbox, a sample name and corresponding sequencing file must be given (one pair per line)
+- In the "Input file setting" textbox, the names of a sample and its corresponding sequencing file must be given (one pair per line)
 - Only paired-end sequencing data is supported, therefore for one sample, two read files (one for the first reads and the other for the second reads) must be specified in two different lines
 - Sequencing files must be gzip-compressed fastq files
 - 실제 data 가 채워진 (test data 활용) 그림 추가하고 이 글 삭제
@@ -88,7 +88,7 @@
 #### From variant calling (you have read mapping files)
 
 - You have read mapping files and therefore you want to begin analysis from variant calling (skip read QC, read trimming, and read mapping)
-- In the "Input file setting" textbox, a sample name and corresponding mapping file must be given (one pair per line)
+- In the "Input file setting" textbox, the names of a sample and its corresponding mapping file must be given (one pair per line)
 - The mapping file must be a BAM file
 - 아래 그림을 실제 data 가 채워진 (test data 활용) 그림으로 바꾸고 이 글 삭제
 
@@ -97,7 +97,7 @@
 #### From population genetic analyses (you have variant calling results)
 
 - You have variant calling results and therefore you want to begin population genetic analyses (skip read QC, read trimming, read mapping, and variant calling)
-- In the "Input variant file name" textbox, a variant calling result file (gzip-compressed VCF file) must be given
+- In the "Input variant file name" textbox, a single variant calling result file (gzip-compressed VCF file) must be given
 - In the "Input sample list" textbox, a sample name must be given (one per line)
 - 아래 그림을 실제 data 가 채워진 (test data 활용) 그림으로 바꾸고 이 글 삭제
 
@@ -123,13 +123,7 @@ A population name is assigned to each input data file in this part.
 - The sex information is optional and therefore leave them as "None" in that case (맞는지 확인 후 한글 삭제)
 
 
-
-
-- In the example below, if you choose 'None' in the bottom selection box for the selected rows and click the 'Apply Sex' button, you can modify the gender values for all selected rows from 'Female' to 'None'.
-
-<p align="center"><img src="../figures/fig_pg6.1.png" width="70%"></p>
-
-### Parameter settting
+### Parameter settting from read QC to post processing
 
 - After completing the input files and population setting, you can select or modify the parameters necessary for pipeline execution.
 - The parameters for the pipeline that need to be entered depend on the selected 'Begin analysis from' option at the top. This is automatically reflected on the webpage, eliminating the need for the user to consider this manually.
