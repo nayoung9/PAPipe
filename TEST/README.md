@@ -61,7 +61,7 @@ perl /PAPipe/bin/webEnvSet.pl ./out &> webenvset.log # ./out is the output direc
 cd ./out/web/
 perl /PAPipe/bin/html/prep_html.pl ./ &> ./webgen.log
 ```
-**9. Browsing analysis results** 
+**8. Browsing analysis results** 
 
 Use own familiar methods, take the generated whole \[web\] directory to the local 
 
