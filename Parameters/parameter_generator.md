@@ -24,34 +24,34 @@
 - The name of a genome assembly file (gzip-compressed FASTA) of a reference species
 - Example: pig.fa.gz
 
-#### (2) Reference dbSNP file (optional)
+**(2) Reference dbSNP file (optional)**
 
 - The dbSNP file (gzip-compressed VCF) of a reference species
 - Optional parameter
 - Example: pig.vcf.gz
 
-#### (3) Total number of chromosomes in the reference genome
+**(3) Total number of chromosomes in the reference genome**
 
 - Total number of chromosomes (including sex chromosomes) of in the reference genome
 - Example: 23
 
-#### (4) Number of autosomes in the reference genome
+**(4) Number of autosomes in the reference genome**
 
 - Total number of autosomes in the reference genome
 - Example: 21
 
-#### (5) Names of sex chromosomes in the reference genome (optional)
+**(5) Names of sex chromosomes in the reference genome (optional)**
 
 - The list of the names of sex chromosomes in the reference genome
 - Comma-separated without space
 - Optional parameter
 - Example: X,Y
 
-#### (6) Name of output directory
+**(6) Name of output directory**
 
 - The name of output directory
 
-#### (7) Threads
+**(7) Threads**
 
 - The number of threads for parallel execution
 
@@ -68,7 +68,7 @@
 - Set the starting point of analysis
 - Data in the "Input file setting" must be set differently based on the choice here
 
-#### From read QC (you have raw reads)
+**From read QC (you have raw reads)**
 
 - You have raw sequencing files and therefore you want to begin analysis from read QC and trimming
 - In the "Input file setting" textbox, the names of a sample and its corresponding sequencing file must be given (one pair per line)
@@ -77,7 +77,7 @@
 - 아래 그림을 실제 data 가 채워진 (test data 활용) 그림으로 바꾸고 이 글 삭제
 <p align="center"><img src="../figures/fig_pg3.png" width="70%"></p>
 
-#### From read mapping (you have trimmed reads)
+**From read mapping (you have trimmed reads)**
 
 - You have trimmed sequencing files and therefore you want to begin analysis from read mapping (skip read QC and trimming)
 - In the "Input file setting" textbox, the names of a sample and its corresponding sequencing file must be given (one pair per line)
@@ -85,7 +85,7 @@
 - Sequencing files must be gzip-compressed fastq files
 - 실제 data 가 채워진 (test data 활용) 그림 추가하고 이 글 삭제
 
-#### From variant calling (you have read mapping files)
+**From variant calling (you have read mapping files)**
 
 - You have read mapping files and therefore you want to begin analysis from variant calling (skip read QC, read trimming, and read mapping)
 - In the "Input file setting" textbox, the names of a sample and its corresponding mapping file must be given (one pair per line)
@@ -94,7 +94,7 @@
 
 <p align="center"><img src="../figures/fig_pg4.png" width="70%"></p>
 
-#### From population genetic analyses (you have variant calling results)
+**From population genetic analyses (you have variant calling results)**
 
 - You have variant calling results and therefore you want to begin population genetic analyses (skip read QC, read trimming, read mapping, and variant calling)
 - In the "Input variant file name" textbox, a single variant calling result file (gzip-compressed VCF file) must be given
@@ -110,12 +110,12 @@ A population name is assigned to each input data file in this part.
 <p align="center"><img src="../figures/fig_pg6.png" width="70%"></p>
 
 
-#### Requirements
+**Requirements**
 
 - Population names must be given in the "Population setting" texbox as described above
 - The names of samples and input files must be given in the "Input file setting" textbox as described above
 
-#### Population setting 
+**Population setting** 
 
 - Click the "Population setting for input files" button to display the population setting table as shown above
 - A population and sex information can be set for each input file separately by using the "Population" and "Sex" drop-down textbox
@@ -144,27 +144,37 @@ A population name is assigned to each input data file in this part.
 
 ### Parameter setting for population genetic analysis
 
-**Drawing PCA plot until objective variance**
+- The description of most parameters can be found from the manual page of each tool (click the "manual" link)
+- The description of PAPipe-specific parameters are shown below
 
-- PAPipe generates PCA plots for all pairwise PC pairs that can be created using all the PCs reaching the target variance.
-- User can set the target explained variance using parameters such as 'Objective sum of the proportion of variance explained (%)' or 'Max PC,' or explicitly specify the PCs used for visualization.
+**Principal component analysis**
 
 <p align="center"><img src="../figures/fig_pg9.png" width="70%"></p>
 
-**Repetitive execution for several analyses**
+아래 설명들 중 PAPipe 에서 만든것이 아닌것들(즉 기존 tool 의 parameter인것들)은 삭제하도록
 
-- To facilitate comprehensive analysis, PAPipe allows for the repetitive execution of the same analysis with different parameters.
-- In the Population tree analysis, when given the 'm' parameter, the analysis will be repetitively executed for values ranging from 0 to the specified 'm' parameter.
+- Number of PC: the total number of PCs generated by this analysis
+- Objective sum of the proportion of variance explained (%): the cutoff value of the sum of the proportion of variance explained (PVE), only top PCs that their PVE sum satisfies this cutoff are used
+- Max PC: only this number of top PCs are used to create the PCA plots between two PCs
+
+
+**Population tree analysis**
 
 <p align="center"><img src="../figures/fig_pg10.png" width="70%"></p>
 
-- In Population Structure Analysis, the analysis is repetitively performed for values ranging from the minimum value of 'k' (2) to the specified 'k', returning results for each iteration.
+- m (maximum number of migration edges to add): PAPipe runs the TreeMix program multiple times by using different values of the number of migration edge parameter (from 0 to a given number).
+
+**Population tree analysis**
 
 <p align="center"><img src="../figures/fig_pg11.png" width="70%"></p>
 
-- For Linkage Disequilibrium Decay Analysis, you can provide multiple values for the 'maxdist' parameter, separated by commas. PAPipe returns results for each execution with different 'maxdist' values.
+- k (maximum number of ancestors): PAPipe runs the ADMIXTURE program multiple times by using different values of the number of ancestor parameter (from 2 to a given number).
+
+**Linkage disequilibrium decay analysis**
 
 <p align="center"><img src="../figures/fig_pg12.png" width="70%"></p>
+
+- MaxDist (bp) (ex: 500,1000,5000,10000): PAPipe runs the PopLDdecay program multiple times by using different values of the maxdist parameter (for given numbers separated by comma)
 
 **Default Fst and user combination**
 
