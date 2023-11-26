@@ -185,7 +185,6 @@
             
     11. Fixation index analysis (Fst)
         - Fixation index results visualized in manhatton plot figures
-        - Fst_result.pdf 파일 없음. 다시 확인. 
             
             ```
             #pairwise comparison
