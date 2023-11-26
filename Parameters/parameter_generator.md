@@ -49,11 +49,11 @@ PAPipe alleviates the effort of creating complex parameter files by providing a 
 - Users can directly modify the select box for each row, or they can select multiple rows, click the 'Apply Population' or 'Apply Sex' button at the bottom, and modify information for multiple sample data entries.
 - Clicking on a specific row in the table will make it bold, indicating that the row is selected. If you hold down the shift key while clicking on the next row you want to select, all rows in the range between the two clicked rows will be selected. You can then apply specific population information using the 'Apply Population' button and assign specific sex information using the 'Apply Sex' button for the selected range.
 
-![Untitled](../figures/fig_pg5.png)
+<p align="center"><img src="../figures/fig_pg6.png" width="70%"></p>
 
 - In the example below, if you choose 'None' in the bottom selection box for the selected rows and click the 'Apply Sex' button, you can modify the gender values for all selected rows from 'Female' to 'None'.
 
-![Untitled](../figures/fig_pg6.png)
+<p align="center"><img src="../figures/fig_pg7.png" width="70%"></p>
 
 ### Parameter settting
 
