@@ -66,11 +66,16 @@
 <p align="center"><img src="../figures/fig_pg2.png" width="70%"></p>
 
 - Set the starting point of analysis
-- 
-- PAPipe can provide different pipelines depending on the level of data users have.
-- Depending on the data level, ranging from raw reads to variant calls, clicking the respective selection box will display the necessary input fields for each.
-- 'From read QC or mapping' step requires pairwise read files per sample
+- Data in the "Input file setting" must be set differently based on the choice here
 
+#### From read QC (you have raw reads)
+
+- Raw sequencing files are prepared
+- Begin analysis from read QC and trimming
+- In the "Input file setting" textbox, a sample name and corresponding sequencing file must be set (one pair per line)
+- Only paired-end sequencing data is supported
+- Sequencing files must be gzip-compressed fastq files
+- 
 <p align="center"><img src="../figures/fig_pg3.png" width="70%"></p>
 
 - 'From variant calling' step requires single alignment file per sample
