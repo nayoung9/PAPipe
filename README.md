@@ -5,20 +5,20 @@
 ### Main workflow
 
 1. Read trimming (by [Trim Galore](https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/))
-2. Read mapping (by BWA or Bowtie2)
-3. Genetic variant calling (by GATK3, GATK4 or BCFtools)
-4. Data filtering and format converting (by PLINK v1.9)
+2. Read mapping (by [BWA](https://bio-bwa.sourceforge.net/) or [Bowtie 2](https://bowtie-bio.sourceforge.net/bowtie2/))
+3. Genetic variant calling (by [GATK3](https://gatk.broadinstitute.org/hc/en-us), [GATK4](https://gatk.broadinstitute.org/hc/en-us) or [BCFtools](https://github.com/samtools/bcftools))
+4. Data filtering and format converting (by [PLINK v 1.9](https://www.cog-genomics.org/plink/))
 5. Population genetic analyses
-    - Principal component analysis (by PLINK v1.9 or v2.0)
-    - Phylogenetic tree analysis (by SNPhylo)
-    - Population tree analysis (by TreeMix)
-    - Population structure analysis (by ADMIXTURE)
-    - Linkage disequilibrium decay analysis (by PopLDdecay)
-    - Selective sweep analysis (by SweepFinder2)
-    - Population admixture analysis (by AdmixTools)
-    - Pairwise sequentially Markovian coalescent analysis (by psmc)
-    - Multiple sequentially Markovian coalescent analysis (by msmc2)
-    - Fixation index analysis (by VCFtools)
+    - Principal component analysis (by [PLINK v 1.9](https://www.cog-genomics.org/plink/) or [PLINK v 2.0](https://www.cog-genomics.org/plink/2.0/))
+    - Phylogenetic tree analysis (by [SNPhylo](https://github.com/thlee/SNPhylo))
+    - Population tree analysis (by [TreeMix](https://bitbucket.org/nygcresearch/treemix/wiki/Home))
+    - Population structure analysis (by [ADMIXTURE](https://speciationgenomics.github.io/ADMIXTURE/))
+    - Linkage disequilibrium decay analysis (by [PopLDdecay](https://github.com/BGI-shenzhen/PopLDdecay/))
+    - Selective sweep analysis (by [SweepFinder2](http://degiorgiogroup.fau.edu/sf2.html))
+    - Population admixture analysis (by [AdmixTools](https://github.com/DReichLab/AdmixTools))
+    - Pairwise sequentially Markovian coalescent analysis (by [psmc](https://github.com/lh3/psmc))
+    - Multiple sequentially Markovian coalescent analysis (by [msmc2](https://github.com/stschiff/msmc2))
+    - Fixation index analysis (by [VCFtools](https://vcftools.sourceforge.net/))
 
 ---
 
