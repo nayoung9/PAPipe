@@ -63,7 +63,7 @@ mkdir input/
 
 - Place the following two files of a reference species in `RUN_DOCKER/data/ref/`
     - Genome assembly file (gzip-compressed FASTA file with an extension .fa.gz)
-    - dbSNP file vcf (gzip-compressed VCF file with an extension .vcf.gz)
+    - dbSNP VCF file (gzip-compressed VCF file with an extension .vcf.gz)
 - Place all other input data (read sequence files, read mapping files, or variant calling files) in `RUN_DOCKER/data/input/`
     - First, create separate directory for each population (one per population) in the "input" directory
     - Then, place files of each population in its directory (example below)
