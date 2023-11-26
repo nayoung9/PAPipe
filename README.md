@@ -1,33 +1,24 @@
-# PAPipe
-
-A comprehensive pipeline for population genetic analysis containing Read mapping, Variant calling, and Population genetic analysis
+# PAPipe: a comprehensive pipeline for population genetic analysis
 
 ![](./figures/fig1.png)
 
 ### Main workflow
 
-1. Raw read trimming
-    1. Trim galore!
-2. Read mapping (Two options)
-    1. BWA
-    2. Bowtie2
-3. Variant calling (Three options)
-    1. GATK3
-    2. GATK4
-    3. BCFtools call
-4. Postprocessing
-5. 11 popular Population genetic analysis
-    1. principal component analysis (Plink 1.9)
-    2. PCA projection analysis (Plink 2)
-    3. Phylogenetic analysis (Snphylo)
-    4. Treemix analysis (Treemix2)
-    5. Population structure analysis (Structure)
-    6. Linkage disequilibrium decay analysis (PopLDdecay)
-    7. Selective sweep finding analysis (SweepFinder2)
-    8. Population admixture analysis (Admixtools)
-    9. Pairwise sequentially Markovian coalescent analysis (PSMC)
-    10. Multiple sequentially Markovian coalescent analysis (MSMC)
-    11. Fixation index analysis (Fst)
+1. Read trimming
+2. Read mapping 
+3. Genetic variant calling 
+4. Data filtering and format converting 
+5. Population genetic analyses
+    - Principal component analysis
+    - Phylogenetic tree analysis
+    - Population tree analysis 
+    - Population structure analysis
+    - Linkage disequilibrium decay analysis
+    - Selective sweep analysis
+    - Population admixture analysis
+    - Pairwise sequentially Markovian coalescent analysis
+    - Multiple sequentially Markovian coalescent analysis
+    - Fixation index analysis
 
 ---
 
