@@ -63,8 +63,10 @@ perl /PAPipe/bin/html/prep_html.pl ./ &> ./webgen.log
 ```
 **9. Browsing analysis results** 
 
-take the whole web directory to the local 
+Use own familiar methods, take the generated whole \[web\] directory to the local 
 
 ```bash
+
+For example (using scp): 
 scp user@host_address:[web directory path in server] [proper local path to download the population analysis results]
 ```
