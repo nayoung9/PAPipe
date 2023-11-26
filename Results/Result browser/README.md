@@ -1,6 +1,6 @@
 # Analysis result browser
 
-### Explore the Result browsing webpage
+## Main web interface
 
 ![fig1.png](../../figures/fig_rb_1.png)
 
