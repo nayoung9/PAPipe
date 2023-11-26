@@ -123,13 +123,15 @@ A population name is assigned to each input data file in this part.
 - The sex information is optional and therefore leave them as "None" in that case (맞는지 확인 후 한글 삭제)
 
 
-### Parameter settting from read QC to post processing
-
-- After completing the input files and population setting, you can select or modify the parameters necessary for pipeline execution.
-- The parameters for the pipeline that need to be entered depend on the selected 'Begin analysis from' option at the top. This is automatically reflected on the webpage, eliminating the need for the user to consider this manually.
-- PAPipe provides two options for read alignment and three options for variant calling. While PAPipe offers default execution, it also caters to users requiring advanced options by providing input forms for detailed parameters at each step.
+### Parameter settting for read QC, read alignment, variant calling, and post processing
 
 <p align="center"><img src="../figures/fig_pg7.png" width="70%"></p>
+
+- Parameter values for read QC, read alignment, variant calling, and post processing can be set using textboxes shown above
+- Read alignment can be done by BWA or Bowtie 2
+- Variant calling can be done by GATK3, GATK4, or BCFtools
+- Additional parameters can be set by clicking "Additional user parameters (optional)"
+- The description of available parameters can be obtained by clicking the "manual" link 
 
 ### Population genetic analysis
 
