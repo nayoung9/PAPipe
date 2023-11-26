@@ -4,13 +4,21 @@
 
 ![fig1.png](../../figures/fig_rb_1.png)
 
-**Date drop-down box**
+**"Date" drop-down box**
 
-**
+- PAPipe can be run multiple times with different parameter settings, and can generate analysis results into the same output directory
+- In this case, PAPipe create a sub-directory with a date for its name for each run, and stores analysis results in that sub-directory
+- By using this drop-down box, user can navigate analysis results generate at different time point
 
-PAPipe assumes the repetitive execution of population genetic analysis with various arguments using the same input. When executing a population genetic analysis, it takes the date at the execution time as the directory name and creates results accordingly. Therefore, users can review all the results from multiple executions with different parameters on this webpage.
+**"Analysis" drop-down box**
 
-Below the title, there are two select boxes for selecting the execution date and the analysis. Upon selecting each, you can retrieve the parameter file and results used in the analysis.
+- By using this drop-down box, user can select a specific analysis and visualize the result
+- Only the analysis performed at each time point can be seen and selected in this drop-down box
+
+**Parameter section**
+
+- Parameter values used for this run can be seen by clicking the 
+
 
 ![fig1.png](../../figures/fig_rb_2.png)
 
