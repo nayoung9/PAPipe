@@ -4,21 +4,21 @@
 
 ### Main workflow
 
-1. Read trimming
-2. Read mapping 
-3. Genetic variant calling 
-4. Data filtering and format converting 
+1. Read trimming (by [Trim Galore](https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/))
+2. Read mapping (by BWA or Bowtie2)
+3. Genetic variant calling (by GATK3, GATK4 or BCFtools)
+4. Data filtering and format converting (by PLINK v1.9)
 5. Population genetic analyses
-    - Principal component analysis
-    - Phylogenetic tree analysis
-    - Population tree analysis 
-    - Population structure analysis
-    - Linkage disequilibrium decay analysis
-    - Selective sweep analysis
-    - Population admixture analysis
-    - Pairwise sequentially Markovian coalescent analysis
-    - Multiple sequentially Markovian coalescent analysis
-    - Fixation index analysis
+    - Principal component analysis (by PLINK v1.9 or v2.0)
+    - Phylogenetic tree analysis (by SNPhylo)
+    - Population tree analysis (by TreeMix)
+    - Population structure analysis (by ADMIXTURE)
+    - Linkage disequilibrium decay analysis (by PopLDdecay)
+    - Selective sweep analysis (by SweepFinder2)
+    - Population admixture analysis (by AdmixTools)
+    - Pairwise sequentially Markovian coalescent analysis (by psmc)
+    - Multiple sequentially Markovian coalescent analysis (by msmc2)
+    - Fixation index analysis (by VCFtools)
 
 ---
 
