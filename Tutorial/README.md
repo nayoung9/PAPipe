@@ -27,7 +27,6 @@ docker image ls    # Check if the image loaded well ("REPOSITORY:pap_docker, TAG
 **4. Downloading the test data** 
 
 ```bash
-cd TEST
 wget http://bioinfo.konkuk.ac.kr/PAPipe/test_data.tar.gz
 tar -zxvf test_data.tar.gz
 ```
