@@ -150,7 +150,7 @@ A population name is assigned to each input data file in this part.
 
 **Fixation index analysis**
 
-<p align="center"><img src="../figures/fig_pg13.png" width="70%"></p>
+<p align="center"><img src="../figures/fig_pg13.png" width="60%"></p>
 
 - By default, the fixation index is calculated for the following population combinations
     - For all possible pairs of two populations
