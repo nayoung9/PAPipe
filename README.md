@@ -126,5 +126,9 @@ If your machine supports a graphic user interface, you can directly go into the 
 
 Check out more details about the generated HTML pages here. 
 
+### Run PAPipe with test data
+
+You can test PAPipe using a small test data. Check out more details here. 
+
 ---
 
