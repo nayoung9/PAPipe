@@ -1,4 +1,4 @@
-## PAPipe
+# PAPipe
 
 A comprehensive pipeline for population genetic analysis containing Read mapping, Variant calling, and Population genetic analysis
 
