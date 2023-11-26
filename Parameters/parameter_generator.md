@@ -8,12 +8,14 @@
 <p align="center"><img src="../figures/fig_pg1.png" width="70%"></p>
 
 ## Documentation
-- The Parameter Generator webpage is also intuitive and easy to understand.
-- By checking the items and placeholders on the webpage, you can easily complete the writing and input the parameters required for execution without much difficulty.
-- The 'Load parameter for test data' button at the top imports inputs that can generate the same parameter file as provided in the tutorial data, displaying it on the webpage for users to review and easily follow along.
-- Clicking the 'Clear' button allows you to erase and reset the entire input.
-- Most of the input form on the webpage is pre-filled with default values, which users can modify as needed.
-- The section that takes the file name as input automatically generates the path within the Docker container when you enter the file name, not the full path.
+
+### "Load parameter for test data" button
+
+Example parameter values for a test data are loaded in each field. 
+
+### "Clear" button
+
+Reset all parameter values. 
 
 ### Global parameters
 
