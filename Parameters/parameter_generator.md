@@ -65,6 +65,8 @@
 
 <p align="center"><img src="../figures/fig_pg2.png" width="70%"></p>
 
+- Set the starting point of analysis
+- 
 - PAPipe can provide different pipelines depending on the level of data users have.
 - Depending on the data level, ranging from raw reads to variant calls, clicking the respective selection box will display the necessary input fields for each.
 - 'From read QC or mapping' step requires pairwise read files per sample
