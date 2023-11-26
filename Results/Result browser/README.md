@@ -4,6 +4,9 @@
 
 ![fig1.png](../../figures/fig_rb_1.png)
 
+**Date drop-down box**
+
+**
 
 PAPipe assumes the repetitive execution of population genetic analysis with various arguments using the same input. When executing a population genetic analysis, it takes the date at the execution time as the directory name and creates results accordingly. Therefore, users can review all the results from multiple executions with different parameters on this webpage.
 
