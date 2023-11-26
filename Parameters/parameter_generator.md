@@ -1,13 +1,13 @@
 # Parameter File Generator
 
-PAPipe alleviates the effort of creating complex parameter files by providing a webpage for generating parameters.
+## Wegpage link 
 
-[PAPipe Parameter generator](http://bioinfo.konkuk.ac.kr/PAPipe/parameter_builder/index.html)
+[PAPipe Parameter File Generator](http://bioinfo.konkuk.ac.kr/PAPipe/parameter_builder/)
 
-
+## Main web interface
 <p align="center"><img src="../figures/fig_pg1.png" width="70%"></p>
 
-
+## Documentation
 - The Parameter Generator webpage is also intuitive and easy to understand.
 - By checking the items and placeholders on the webpage, you can easily complete the writing and input the parameters required for execution without much difficulty.
 - The 'Load parameter for test data' button at the top imports inputs that can generate the same parameter file as provided in the tutorial data, displaying it on the webpage for users to review and easily follow along.
