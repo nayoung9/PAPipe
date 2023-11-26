@@ -72,12 +72,25 @@
 
 - You have raw sequencing files and therefore you want to begin analysis from read QC and trimming
 - In the "Input file setting" textbox, a sample name and corresponding sequencing file must be set (one pair per line)
-- Only paired-end sequencing data is supported
+- Only paired-end sequencing data is supported, therefore for one sample, two read files (one for the first reads and the other for the second reads) must be specified in two different lines
 - Sequencing files must be gzip-compressed fastq files
-- 
+- 아래 그림을 실제 data 가 채워진 (test data 활용) 그림으로 바꾸고 이 글 삭제
 <p align="center"><img src="../figures/fig_pg3.png" width="70%"></p>
 
-- 'From variant calling' step requires single alignment file per sample
+#### From read mapping (you have trimmed reads)
+
+- You have trimmed sequencing files and therefore you want to begin analysis from read mapping (skip read QC and trimming)
+- In the "Input file setting" textbox, a sample name and corresponding sequencing file must be set (one pair per line)
+- Only paired-end sequencing data is supported, therefore for one sample, two read files (one for the first reads and the other for the second reads) must be specified in two different lines
+- Sequencing files must be gzip-compressed fastq files
+- 실제 data 가 채워진 (test data 활용) 그림 추가하고 이 글 삭제
+
+#### From variant calling (you have read mapping files)
+
+- You have read mapping files and therefore you want to begin analysis from variant calling (skip read QC, read trimming, and read mapping)
+- In the "Input file setting" textbox, a sample name and corresponding mapping file must be set (one pair per line)
+- The mapping file must be a BAM file
+- 아래 그림을 실제 data 가 채워진 (test data 활용) 그림으로 바꾸고 이 글 삭제
 
 <p align="center"><img src="../figures/fig_pg4.png" width="70%"></p>
 
