@@ -93,17 +93,21 @@ docker run -v [absolute path of the "RUN_DOCKER" directory]:/RUN_DOCKER/  -it pa
 
 **Running PAPipe inside the Docker container** 
 
-Analysis results will be generated in the output directory specified in the "main_param.txt" file. 
-
 ```bash
 # Run in the docker container
 cd /RUN_DOCKER/
 python3 /PAPipe/bin/main.py  -P ./main_param.txt  -I ./main_input.txt -A ./main_sample.txt &> ./log
 ```
 
+Analysis results will be generated in the output directory specified in the "main_param.txt" file. 
+
+Check out more details about the analysis results here.
+
+
 **Generating HTML pages for browsing analysis results** 
 
 You can check all analysis results in the output directory specified in the "main_param.txt" file. 
+
 However, PAPipe also supports the generation of HTML pages for easily browsing the analysis results.
 
 ```bash
