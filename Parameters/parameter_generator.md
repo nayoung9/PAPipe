@@ -1,4 +1,4 @@
-# Documentation for Parameter File Generation Webpage
+# Parameter File Generator
 
 PAPipe alleviates the effort of creating complex parameter files by providing a webpage for generating parameters.
 
