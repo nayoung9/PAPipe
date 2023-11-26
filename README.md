@@ -60,7 +60,7 @@ mkdir input/
     - reference genome assembly (~fa.gz)
     - reference DBSNP vcf (~vcf.gz)
 - Set user input data in `.../RUN_DOCKER/data/input`
-    - Reads or alignments should be in the subdirectory named as population
+    - Reads or alignments should be in the subdirectory named as user input population names
         - `.../RUN_DOCKER/data/input/population1/`
         - `.../RUN_DOCKER/data/input/population2/`
 
