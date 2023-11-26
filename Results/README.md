@@ -50,20 +50,18 @@
         
 3. Variant call data
     - Variant call results generated using all population sequencing data
-    - 아래 파일 경로 및 이름이 이상함. 다시 확인 및 수정
         
         ```
-        Path_to_out_directory/02_VariantCalling/VariantCalling/All.variant.combined.g.vcf.gz
+        Path_to_out_directory/02_VariantCalling/VariantCalling/All.variant.combined.GT.SNP.flt.vcf.gz
         
         ```
         
 3. Post-processed data
     - Variant call gone through Hapmap format conversion/Plink filtering
-    - 아래 파일 경로 및 이름이 이상함. 다시 확인 및 수정
         
         ```
-        Path_to_out_directory/03_Postprocessing/Hapmap/variant.combined.GT.SNP.flt.hapmap
-        Path_to_out_directory/03_Postprocessing/plink/[prefix].*
+        Path_to_out_directory/03_Postprocessing/Hapmap/All.variant.combined.GT.SNP.flt.hapmap
+        Path_to_out_directory/03_Postprocessing/plink/ALL.*
         
         ```
         
@@ -85,27 +83,30 @@
             
     2. PCA projection analysis (PLINK v 2.0)
         - PCA results
-        - 아래 위치가 위와 동일하다. 수정하도록. 
             
             ```
-            Path_to_out_directory/04_Population/[running datetime]/PCA/PCs.info
+            Path_to_out_directory/04_Population/[running datetime]/Plink2/PCs.info
+            
+            ```
+        - PCA plots of the combination of two PCs
+            
+            ```
+            Path_to_out_directory/04_Population/[running datetime]/Plink2/all.PCA.pdf
             
             ```
             
     3. Phylogenetic analysis (Snphylo)
         - .NEWICK formatted phylogenetic tree
-        - SNPhylo 디렉토리가 보이지 않는다. 다시 확인. 
             
             ```
-            Path_to_out_directory/04_Population/[running datetime]/SNPhylo/snphylo.ml.txt
+            Path_to_out_directory/04_Population/[running datetime]/PhylogeneticTree/snphylo.ml.txt
             
             ```
             
         - Visualized phylogenetic tree
-        - SNPhylo 디렉토리가 보이지 않는다. 다시 확인. 
             
             ```
-            Path_to_out_directory/04_Population/[running datetime]/SNPhylo/snphylo.ml.png
+            Path_to_out_directory/04_Population/[running datetime]/PhylogeneticTree/snphylo.ml.png
             
             ```
             
@@ -118,19 +119,17 @@
             ```
             
     5. Population structure analysis (Structure)
-        - STRUCTURE results per K in .PNG files and all STRUCTURE results in a single PDF file
-        - STRUCTURE 가 아니고 Structure 이니? 확인.
+        - STRUCTURE results per K in .PNG files
             
             ```
-            /Path_to_out_directory/04_Population/[running datetime]/STRUCTURE/CLUMPAK/K=[n].MajorCluster.png
+            /Path_to_out_directory/04_Population/[running datetime]/Structure/CLUMPAK/K=[n].MajorCluster.png
             
             ```
             
         - STRUCTURE results for all K in single .PDF file
-        - STRUCTURE 가 아니고 Structure 이니? 확인. pipeline_summary.pdf 파일 없음 확인. 
             
             ```
-            /Path_to_out_directory/04_Population/[running datetime]/STRUCTURE/CLUMPAK/pipeline_summary.pdf
+            /Path_to_out_directory/04_Population/[running datetime]/Structure/CLUMPAK/job_100_pipeline_summary.pdf
             
             ```
             
@@ -159,13 +158,12 @@
             
     8. Population admixture analysis (Admixtools)
         - Admixture analysis results
-        - ADMIXTOOLS 디렉토리 없음 확인. 각 하위 디렉토리의 파일 유무 다시 확인.
             
             ```
-            Path_to_out_directory/04_Population/[running datetime]/ADMIXTOOLS/admixtools_3pop/result.out
-            Path_to_out_directory/04_Population/[running datetime]/ADMIXTOOLS/admixtools_4diff/result.out
-            Path_to_out_directory/04_Population/[running datetime]/ADMIXTOOLS/admixtools_f4stat/result.out
-            Path_to_out_directory/04_Population/[running datetime]/ADMIXTOOLS/admixtools_Dstat/result.out
+            Path_to_out_directory/04_Population/[running datetime]/AdmixtureProportion/admixtools_3pop/3pop.out
+            Path_to_out_directory/04_Population/[running datetime]/AdmixtureProportion/admixtools_4diff/4diff.out
+            Path_to_out_directory/04_Population/[running datetime]/AdmixtureProportion/admixtools_f4stat/f4stat.out
+            Path_to_out_directory/04_Population/[running datetime]/AdmixtureProportion/admixtools_Dstat/Dstat.out
             
             ```
             
@@ -190,14 +188,21 @@
         - Fst_result.pdf 파일 없음. 다시 확인. 
             
             ```
-            /Path_to_out_directory/04_Population/[running datetime]/Fst/[pair information]/Fst_result.pdf
+            #pairwise comparison
+            /Path_to_out_directory/04_Population/[running datetime]/Fst/[comparing pair information]/[comparing pair information].pdf
+            
+            #single population vs all other populations, user combination
+            /Path_to_out_directory/04_Population/[running datetime]/Fst/[comparing information]/Fst_result.pdf
             
             ```
             
         - Significant regions results of Fst analysis
-        - 아래 파일 [comparing pair information].sig.region.txt 형식이 맞는지 다시 확인. 
             
             ```
+            #pairwise comparison
             /Path_to_out_directory/04_Population/[running datetime]/Fst/[comparing pair information]/[comparing pair information].sig.region.txt
+
+            #single population vs all other populations, user combination
+            /Path_to_out_directory/04_Population/[running datetime]/Fst/[comparing information]/Fst_result.sig.region.txt
             
             ```
