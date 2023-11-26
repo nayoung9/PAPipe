@@ -19,7 +19,7 @@
 
 ### Global parameters
 
-#### (1) Reference genome assembly file
+**(1) Reference genome assembly file**
 
 - The name of a genome assembly file (gzip-compressed FASTA) of a reference species
 - Example: pig.fa.gz
