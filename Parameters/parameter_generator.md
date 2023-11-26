@@ -5,7 +5,7 @@ PAPipe alleviates the effort of creating complex parameter files by providing a 
 [PAPipe Parameter generator](http://bioinfo.konkuk.ac.kr/PAPipe/parameter_builder/index.html)
 
 
-<img src="../figures/fig_pg1.png" width="70%">
+<p align="center"><img src="../figures/fig_pg1.png" width="70%"></p>
 
 
 - The Parameter Generator webpage is also intuitive and easy to understand.
@@ -26,21 +26,21 @@ PAPipe alleviates the effort of creating complex parameter files by providing a 
 
 ### Begin analysis from
 
-<img src="../figures/fig_pg2.png" width="70%">
+<p align="center"><img src="../figures/fig_pg2.png" width="70%"></p>
 
 - PAPipe can provide different pipelines depending on the level of data users have.
 - Depending on the data level, ranging from raw reads to variant calls, clicking the respective selection box will display the necessary input fields for each.
-- <From read QC or mapping> step requires pairwise read files per sample
+- 'From read QC or mapping' step requires pairwise read files per sample
 
-<img src="../figures/fig_pg3.png" width="70%">
+<p align="center"><img src="../figures/fig_pg3.png" width="70%"></p>
 
-- <From variant calling> step requires single alignment file per sample
+- 'From variant calling' step requires single alignment file per sample
 
-<img src="../figures/fig_pg4.png" width="70%">
+<p align="center"><img src="../figures/fig_pg4.png" width="70%"></p>
 
-- <From population genetic analyses> step requires variant file and sample information
+- 'From population genetic analyses' step requires variant file and sample information
 
-<img src="../figures/fig_pg5.png" width="70%">
+<p align="center"><img src="../figures/fig_pg5.png" width="70%"></p>
 
 ### Population setting for input files
 
