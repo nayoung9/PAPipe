@@ -130,7 +130,7 @@ A population name is assigned to each input data file in this part.
 
 ### Population genetic analysis
 
-<p align="center"><img src="../figures/fig_pg8.png" width="70%"></p>
+<p align="center"><img src="../figures/fig_pg8.png" width="60%"></p>
 
 - A total of 11 population genetic analyses can be simultaneously run by using the on/off button shown above
 
