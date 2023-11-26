@@ -29,7 +29,7 @@ scp user@host_address:[web directory path in server] [proper local path to downl
 
 ### Explore the Result browsing webpage
 
-![fig1.png](../figures/fig_rb_1.png)
+![fig1.png](../../figures/fig_rb_1.png)
 
 The PAPipe Result browsing webpage is very intuitive.
 
@@ -37,7 +37,7 @@ PAPipe assumes the repetitive execution of population genetic analysis with vari
 
 Below the title, there are two select boxes for selecting the execution date and the analysis. Upon selecting each, you can retrieve the parameter file and results used in the analysis.
 
-![fig1.png](../figures/fig_rb_2.png)
+![fig1.png](../../figures/fig_rb_2.png)
 
 The parameters used during program execution are initially hidden, and clicking the corresponding button reveals the options and details used during the execution.
 
