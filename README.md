@@ -101,7 +101,7 @@ python3 /PAPipe/bin/main.py  -P ./main_param.txt  -I ./main_input.txt -A ./main_
 
 Analysis results will be generated in the output directory specified in the "main_param.txt" file. 
 
-Check out more details about the analysis results here.
+Check out more details about the analysis results [here](./Results/README.md).
 
 
 **Generating HTML pages for browsing analysis results** 
