@@ -83,7 +83,7 @@ The above three files must be placed in the above "RUN_DOCKER" directory.
 
 You can easily generate the parameter files using our [parameter file genetator](http://bioinfo.konkuk.ac.kr/PAPipe/parameter_builder/).
 
-Check out more details about the parameter files [here](./Parameters/parameter_generator.md).
+Check out more details about the parameter file generator [here](./Parameters/parameter_generator.md).
 
 **Creating a docker container that mounts the above "RUN_DOCKER" directory** 
 
