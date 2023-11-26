@@ -1,29 +1,24 @@
+# mainReadme
+
 ## PAPipe
 
+A comprehensive pipeline for population genetic analysis containing Read mapping, Variant calling, and Population genetic analysis
 
-
- A comprehensive pipeline for population genetic analysis containing Read mapping, Variant calling, and Population genetic analysis
-
-![fig1.png](./figures/fig1.png)
-
+![](./figures/fig1.png)
 
 ### Main workflow
 
 1. Raw read trimming
     1. Trim galore!
-
 2. Read mapping (Two options)
     1. BWA
     2. Bowtie2
-
 3. Variant calling (Three options)
     1. GATK3
     2. GATK4
     3. BCFtools call
-
 4. Postprocessing
-
-5. 11 popular Population genetic analysis 
+5. 11 popular Population genetic analysis
     1. principal component analysis (Plink 1.9)
     2. PCA projection analysis (Plink 2)
     3. Phylogenetic analysis (Snphylo)
@@ -36,64 +31,70 @@
     10. Multiple sequentially Markovian coalescent analysis (MSMC)
     11. Fixation index analysis (Fst)
 
-### Install PAPipe
-
-```bash
-git clone https://github.com/jkimlab/PAPipe.git
-```
-
-### Requirements
-
 ---
 
-- You can prepare the environment in local with the commands below
-    
-    ```bash
-    cd ./Programs/
-    bash ./set_local_env.sh
-    ```
-    
-    This commands will automatically install the requirements and print the paths can be used as parameter file directly 
-    
-- Or you can use PAPipe on docker without having to prepare the environment.
-    → [How to use PAPipe on docker](https://github.com/nayoung9/PAPipe#using-docker)  
-    
-- Check out [Requirements](https://github.com/nayoung9/PAPipe/tree/main/Requirements) for details
+### Install PAPipe image
+
+```bash
+wget http://bioinfo.konkuk.ac.kr/PAPipe/bin/PAPipe.tar.gz
+docker load -i ./PAPipe.tar.gz
+
+#Check if the image loaded well 
+docker image ls
+```
 
 ### Run PAPipe
 
-**Using local environment**
+**Setting local input directory for running the PAPipe** 
 
 ```bash
-/Path_to_PAPipe/Programs/bin/main.py -p main.param.txt -s main.sample.txt - -o OUTDIR
+mkdir RUN_DOCKER/
+cd RUN_DOCKER/
+
+mkdir data/
+cd data/
+
+mkdir ref/
+mkdir input/
 ```
 
-**Using Docker**
+- Set user reference data in `…/RUN_DOCKER/data/ref`
+    - reference genome assembly (~fa.gz)
+    - reference DBSNP vcf (~vcf.gz)
+- Set user input data in `.../RUN_DOCKER/data/input`
+    - Reads or alignments should be in the subdirectory named as population
+        - `.../RUN_DOCKER/data/input/population1/`
+        - `.../RUN_DOCKER/data/input/population2/`
+
+**Running docker container mounting local data directory** 
 
 ```bash
-# Change directory where Dockerfile exists 
-cd ./Programs
-
-# Build Docker image
-docker build -t [docker image name] ./ &> log_image_build
-
-#Run
-docker run -v [Local directory containing data]:[Path of connecting directory on container] -it [docker image name]
-/Path_to_PAPipe/Programs/bin/main.py -p main.param.txt -s main.sample.txt - -o OUTDIR
+docker run -v [absolute path of local RUN_DOCKER/]:/RUN_DOCKER/  -it pap_docker:latest
 ```
 
-→ You can generate the parameter file easily at here : [PAPipe Parameter genetator](http://bioinfo.konkuk.ac.kr/practice/nayoung/PAPipe/parameter_builder/jm_index5.html)
+→ You can generate the parameter file easily at here : [PAPipe Parameter genetator](http://bioinfo.konkuk.ac.kr/PAPipe/parameter_builder/)
 
-→ Check out more details about parameter files : [Tutorial](https://github.com/nayoung9/PAPipe/tree/main/Tutorial)
+→ Check out more details about parameter files : [Parameters](./Parameters/parameter_generator.md)
+
+**Running PAPipe inside the docker container** 
+
+```bash
+# Run in the docker container
+cd /RUN_DOCKER/
+python3 /PAPipe/bin/main.py  -P ./main_param.txt  -I ./main_input.txt -A ./main_sample.txt &> ./log
+```
+
+---
 
 ### Results of PAPipe
 
-1. Trimmed read data 
+1. Trimmed read data
     - Trimmed read data for all samples
         
         ```
         /Path_to_out_directory/00_ReadQC/TrimmedData/[sample]_1_val_1.fq.gz
         /Path_to_out_directory/00_ReadQC/TrimmedData/[sample]_2_val_2.fq.gz
+        
         ```
         
     - fastQC results for all samples before and after trimming
@@ -101,19 +102,22 @@ docker run -v [Local directory containing data]:[Path of connecting directory on
         ```
         /Path_to_out_directory/00_ReadQC/QC_Report_Before_Trimming/[population]/[sample]_1_fastqc.html
         /Path_to_out_directory/00_ReadQC/QC_Report_Before_Trimming/[population]/[sample]_2_fastqc.html
+        
         ```
         
     - MultiQC summarized QC results for populations before and after trimming
         
         ```
         /Path_to_out_directory/00_ReadQC/QC_Report_Before_Trimming/[population]/multiqc_report.html
+        
         ```
         
-2. Read alignment data 
+2. Read alignment data
     - Read mapping files for all samples
         
         ```
         /Path_to_out_directory/01_readMapping/04ReadRegrouping/[population]_[sample].addRG.marked.sort.bam
+        
         ```
         
 3. Variant call data
@@ -121,14 +125,16 @@ docker run -v [Local directory containing data]:[Path of connecting directory on
         
         ```
         /Path_to_out_directory/02_VariantCalling/VariantCalling/[].All.variant.combined.g.vcf.gz
+        
         ```
         
-4. Post-processed data 
+4. Post-processed data
     - Variant call gone through Hapmap format conversion/Plink filtering
         
         ```
         /Path_to_out_directory/03_Postprocessing/Hapmap/variant.combined.GT.SNP.flt.hapmap
         /Path_to_out_directory/03_Postprocessing/plink/[prefix].*
+        
         ```
         
 5. Population analysis
@@ -137,12 +143,14 @@ docker run -v [Local directory containing data]:[Path of connecting directory on
             
             ```
             /Path_to_out_directory/04_Population/[running datetime]/PCA/PCs.info
+            
             ```
             
         - PCA plots of all available combination of two PCs
             
             ```
             /Path_to_out_directory/04_Population/[running datetime]/PCA/all.PCA.pdf
+            
             ```
             
     2. PCA projection analysis (Plink 2)
@@ -150,6 +158,7 @@ docker run -v [Local directory containing data]:[Path of connecting directory on
             
             ```
             /Path_to_out_directory/04_Population/[running datetime]/PCA/PCs.info
+            
             ```
             
     3. Phylogenetic analysis (Snphylo)
@@ -157,12 +166,14 @@ docker run -v [Local directory containing data]:[Path of connecting directory on
             
             ```
             /Path_to_out_directory/04_Population/[running datetime]/SNPhylo/snphylo.ml.txt
+            
             ```
             
         - Visualized phylogenetic tree
             
             ```
             /Path_to_out_directory/04_Population/[running datetime]/SNPhylo/snphylo.ml.png
+            
             ```
             
     4. Treemix analysis (Treemix2)
@@ -170,19 +181,22 @@ docker run -v [Local directory containing data]:[Path of connecting directory on
             
             ```
             /Path_to_out_directory/04_Population/[running datetime]/Treemix/Treemix.results.pdf
+            
             ```
             
     5. Population structure analysis (Structure)
         - STRUCTURE results per K in .PNG files and all STRUCTURE results in a single PDF file
             
             ```
-            /Path_to_out_directory/04_Population/[running datetime]/STRUCTURE/CLUMPAK/K=[n].MajorCluster.png        
+            /Path_to_out_directory/04_Population/[running datetime]/STRUCTURE/CLUMPAK/K=[n].MajorCluster.png
+            
             ```
             
         - STRUCTURE results for all K in single .PDF file
             
             ```
             /Path_to_out_directory/04_Population/[running datetime]/STRUCTURE/CLUMPAK/pipeline_summary.pdf
+            
             ```
             
     6. Linkage disequilibrium decay analysis (PopLDdecay)
@@ -190,6 +204,7 @@ docker run -v [Local directory containing data]:[Path of connecting directory on
             
             ```
             /Path_to_out_directory/04_Population/[running datetime]/LdDecay/[maxDist]/Plot/out.pdf
+            
             ```
             
     7. Selective sweep finding analysis (SweepFinder2)
@@ -197,12 +212,14 @@ docker run -v [Local directory containing data]:[Path of connecting directory on
             
             ```
             /Path_to_out_directory/04_Population/[running datetime]/SweepFinder2/[population]/SweepFinderOut.pdf
+            
             ```
             
         - Selective Sweep results per population and per chromosome
             
             ```
             /Path_to_out_directory/04_Population/[running datetime]/SweepFinder2/[population]/[population].[chromosome].SF2out
+            
             ```
             
     8. Population admixture analysis (Admixtools)
@@ -211,8 +228,9 @@ docker run -v [Local directory containing data]:[Path of connecting directory on
             ```
             /Path_to_out_directory/04_Population/[running datetime]/ADMIXTOOLS/admixtools_3pop/result.out
             /Path_to_out_directory/04_Population/[running datetime]/ADMIXTOOLS/admixtools_4diff/result.out
-            /Path_to_out_directory/04_Population/[running datetime]/ADMIXTOOLS/admixtools_f4stat/result.out        
+            /Path_to_out_directory/04_Population/[running datetime]/ADMIXTOOLS/admixtools_f4stat/result.out
             /Path_to_out_directory/04_Population/[running datetime]/ADMIXTOOLS/admixtools_Dstat/result.out
+            
             ```
             
     9. Pairwise sequentially Markovian coalescent analysis (PSMC)
@@ -220,6 +238,7 @@ docker run -v [Local directory containing data]:[Path of connecting directory on
             
             ```
             /Path_to_out_directory/04_Population/[running datetime]/EffectiveSize/psmc_plot.pdf
+            
             ```
             
     10. Multiple sequentially Markovian coalescent analysis (MSMC)
@@ -227,6 +246,7 @@ docker run -v [Local directory containing data]:[Path of connecting directory on
             
             ```
             /Path_to_out_directory/04_Population/[running datetime]/MSMC/MSMC.pdf
+            
             ```
             
     11. Fixation index analysis (Fst)
@@ -234,10 +254,12 @@ docker run -v [Local directory containing data]:[Path of connecting directory on
             
             ```
             /Path_to_out_directory/04_Population/[running datetime]/Fst/[pair information]/Fst_result.pdf
+            
             ```
             
         - Significant regions results of Fst analysis
             
             ```
             /Path_to_out_directory/04_Population/[running datetime]/Fst/[comparing pair information]/[comparing pair information].sig.region.txt
+            
             ```
