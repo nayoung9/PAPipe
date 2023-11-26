@@ -105,10 +105,8 @@ PAPipe alleviates the effort of creating complex parameter files by providing a 
 <p align="center"><img src="../figures/fig_pg13.png" width="70%"></p>
 
 ### Clicking Generate paramter files button and get generated parameter files 
-
-<p align="center"><img src="../figures/fig_pg_fin.png" width="70%"></p>
-
 - Once the necessary parameter input is complete, click the 'Generate Parameter Files' button.
 - After clicking that button, two new buttons will be generated at the bottom.
 - When you click the 'Click the link of parameter files' button on the left, the link to download the generated parameters using wget will be copied to the clipboard.
 - When you click the 'Download parameter files' button on the right, the download of the generated parameter files will begin.
+<p align="center"><img src="../figures/fig_pg_fin.png" width="70%"></p>
