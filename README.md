@@ -41,11 +41,9 @@ sudo usermod -aG docker $USER
 ### Install the PAPipe Docker image
 
 ```bash
-wget http://bioinfo.konkuk.ac.kr/PAPipe/bin/PAPipe.tar.gz
-docker load -i ./PAPipe.tar.gz
-
-#Check if the image loaded well 
-docker image ls
+wget http://bioinfo.konkuk.ac.kr/PAPipe/bin/PAPipe.tar.gz    # Download the Docker image file
+docker load -i ./PAPipe.tar.gz    # Load the Docker image file
+docker image ls    # Check if the image loaded well ("REPOSITORY:pap_docker, TAG:latest" must be shown)
 ```
 
 ### Run PAPipe
