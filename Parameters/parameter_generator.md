@@ -4,7 +4,9 @@ PAPipe alleviates the effort of creating complex parameter files by providing a 
 
 [PAPipe Parameter generator](http://bioinfo.konkuk.ac.kr/PAPipe/parameter_builder/index.html)
 
-![Untitled](../figures/fig_pg1.png)
+
+<img src="../figures/fig_pg1.png" width="48">
+
 
 - The Parameter Generator webpage is also intuitive and easy to understand.
 - By checking the items and placeholders on the webpage, you can easily complete the writing and input the parameters required for execution without much difficulty.
