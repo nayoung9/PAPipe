@@ -120,7 +120,7 @@ perl /PAPipe/bin/html/prep_html.pl ./ &> ./webgen.log
 After successfully running the above commands, follow the two steps below to open the HTML pages. 
 
 - Download the entire directory of "web" into your personal computer. 
-- Open the "index.html" file using any web browser
+- Open the "index.html" file in the "web" directory using any web browser
 
 If your machine supports a graphic user interface, you can directly go into the "web" directory and open the "index.html" file without downloading the "web" directory into your personal computer. 
 
