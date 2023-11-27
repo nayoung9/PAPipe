@@ -79,7 +79,7 @@
             Path_to_out_directory/04_Population/[running datetime]/PCA/all.PCA.pdf
             ```
             
-    - Principal component analysis by PLINK v 2.0
+#### Principal component analysis by PLINK v 2.0
    
         - Main result directory
             ```
@@ -98,7 +98,7 @@
             Path_to_out_directory/04_Population/[running datetime]/Plink2/all.PCA.pdf
             ```
             
-    - Phylogenetic tree analysis
+#### Phylogenetic tree analysis
    
         - Main result directory
             ```
@@ -117,7 +117,7 @@
             Path_to_out_directory/04_Population/[running datetime]/PhylogeneticTree/snphylo.ml.png
             ```
             
-    - Population tree analysis
+#### Population tree analysis
    
         - Main result directory
             ```
@@ -130,7 +130,7 @@
             Path_to_out_directory/04_Population/[running datetime]/Treemix/Treemix.results.pdf
             ```
             
-    - Population structure analysis
+#### Population structure analysis
    
         - Main result directory
             ```
@@ -149,7 +149,7 @@
             Path_to_out_directory/04_Population/[running datetime]/Structure/CLUMPAK/job_100_pipeline_summary.pdf
             ```
             
-    - Linkage disequilibrium decay analysis
+#### Linkage disequilibrium decay analysis
    
         - Main result directory
             ```
@@ -162,7 +162,7 @@
             Path_to_out_directory/04_Population/[running datetime]/LdDecay/[maxDist]/Plot/out.pdf
             ```
             
-    - Selective sweep analysis
+#### Selective sweep analysis
    
         - Main result directory
             ```
@@ -181,7 +181,7 @@
             Path_to_out_directory/04_Population/[running datetime]/SweepFinder2/[population]/[population].[chromosome].SF2out
             ```
             
-    - Population admixture analysis
+#### Population admixture analysis
    
         - Main result directory
             ```
@@ -197,7 +197,7 @@
             Path_to_out_directory/04_Population/[running datetime]/AdmixtureProportion/admixtools_Dstat/Dstat.out
             ```
             
-    - Pairwise sequentially Markovian coalescent analysis
+#### Pairwise sequentially Markovian coalescent analysis
    
         - Main result directory
             ```
@@ -210,7 +210,7 @@
             Path_to_out_directory/04_Population/[running datetime]/EffectiveSize/psmc_plot.pdf
             ```
             
-    - Multiple sequentially Markovian coalescent analysis
+#### Multiple sequentially Markovian coalescent analysis
    
         - Main result directory
             ```
@@ -223,7 +223,7 @@
             Path_to_out_directory/04_Population/[running datetime]/MSMC/MSMC.pdf
             ```
             
-    - Fixation index analysis
+#### Fixation index analysis
    
         - Main result directory
             ```
