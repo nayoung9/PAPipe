@@ -66,97 +66,128 @@
         ```
         
 4. Population analysis
-    1. principal component analysis (PLINK v 1.9)
+    (1). Principal component analysis by PLINK v 1.9
+        - Main result directory
+
+            ```
+            Path_to_out_directory/04_Population/[running datetime]/PCA/
+            ```
+   
         - PCA results
             
             ```
             Path_to_out_directory/04_Population/[running datetime]/PCA/PCs.info
-            
             ```
             
         - PCA plots of the combination of two PCs
             
             ```
             Path_to_out_directory/04_Population/[running datetime]/PCA/all.PCA.pdf
-            
             ```
             
-    2. PCA projection analysis (PLINK v 2.0)
+    (2). Principal component analysis by PLINK v 2.0
+        - Main result directory
+            ```
+            Path_to_out_directory/04_Population/[running datetime]/Plink2/
+            ```
+   
         - PCA results
             
             ```
             Path_to_out_directory/04_Population/[running datetime]/Plink2/PCs.info
-            
             ```
+   
         - PCA plots of the combination of two PCs
             
             ```
             Path_to_out_directory/04_Population/[running datetime]/Plink2/all.PCA.pdf
-            
             ```
             
-    3. Phylogenetic analysis (Snphylo)
+    (3). Phylogenetic tree analysis
+        - Main result directory
+            ```
+            Path_to_out_directory/04_Population/[running datetime]/PhylogeneticTree/
+            
+            ```
+   
         - .NEWICK formatted phylogenetic tree
             
             ```
             Path_to_out_directory/04_Population/[running datetime]/PhylogeneticTree/snphylo.ml.txt
-            
             ```
             
         - Visualized phylogenetic tree
             
             ```
             Path_to_out_directory/04_Population/[running datetime]/PhylogeneticTree/snphylo.ml.png
-            
             ```
             
-    4. Treemix analysis (Treemix2)
+    (4). Population tree analysis
+        - Main result directory
+            ```
+            Path_to_out_directory/04_Population/[running datetime]/Treemix/
+            ```
+   
         - Treemix results in a single PDF file
             
             ```
-            /Path_to_out_directory/04_Population/[running datetime]/Treemix/Treemix.results.pdf
-            
+            Path_to_out_directory/04_Population/[running datetime]/Treemix/Treemix.results.pdf
             ```
             
-    5. Population structure analysis (Structure)
+    (5). Population structure analysis
+        - Main result directory
+            ```
+            Path_to_out_directory/04_Population/[running datetime]/Structure/
+            ```
+   
         - STRUCTURE results per K in .PNG files
             
             ```
-            /Path_to_out_directory/04_Population/[running datetime]/Structure/CLUMPAK/K=[n].MajorCluster.png
-            
+            Path_to_out_directory/04_Population/[running datetime]/Structure/CLUMPAK/K=[n].MajorCluster.png
             ```
             
         - STRUCTURE results for all K in single .PDF file
             
             ```
-            /Path_to_out_directory/04_Population/[running datetime]/Structure/CLUMPAK/job_100_pipeline_summary.pdf
-            
+            Path_to_out_directory/04_Population/[running datetime]/Structure/CLUMPAK/job_100_pipeline_summary.pdf
             ```
             
-    6. Linkage disequilibrium decay analysis (PopLDdecay)
+    (6). Linkage disequilibrium decay analysis
+        - Main result directory
+            ```
+            Path_to_out_directory/04_Population/[running datetime]/LdDecay/
+            ```
+   
         - Linkage disequilibrium decay results for each maximum distance parameter
             
             ```
-            /Path_to_out_directory/04_Population/[running datetime]/LdDecay/[maxDist]/Plot/out.pdf
-            
+            Path_to_out_directory/04_Population/[running datetime]/LdDecay/[maxDist]/Plot/out.pdf
             ```
             
-    7. Selective sweep finding analysis (SweepFinder2)
+    (7). Selective sweep analysis
+        - Main result directory
+            ```
+            Path_to_out_directory/04_Population/[running datetime]/SweepFinder2/
+            ```
+   
         - Selective Sweep results in point plot figures for all chromosom generated per population
             
             ```
-            /Path_to_out_directory/04_Population/[running datetime]/SweepFinder2/[population]/SweepFinderOut.pdf
-            
+            Path_to_out_directory/04_Population/[running datetime]/SweepFinder2/[population]/SweepFinderOut.pdf
             ```
             
         - Selective Sweep results per population and per chromosome
             
             ```
-            /Path_to_out_directory/04_Population/[running datetime]/SweepFinder2/[population]/[population].[chromosome].SF2out
-            
+            Path_to_out_directory/04_Population/[running datetime]/SweepFinder2/[population]/[population].[chromosome].SF2out
             ```
             
-    8. Population admixture analysis (Admixtools)
+    (8). Population admixture analysis
+        - Main result directory
+            ```
+            Path_to_out_directory/04_Population/[running datetime]/AdmixtureProportion/
+            ```
+   
         - Admixture analysis results
             
             ```
@@ -164,35 +195,46 @@
             Path_to_out_directory/04_Population/[running datetime]/AdmixtureProportion/admixtools_4diff/4diff.out
             Path_to_out_directory/04_Population/[running datetime]/AdmixtureProportion/admixtools_f4stat/f4stat.out
             Path_to_out_directory/04_Population/[running datetime]/AdmixtureProportion/admixtools_Dstat/Dstat.out
-            
             ```
             
-    9. Pairwise sequentially Markovian coalescent analysis (PSMC)
+    (9). Pairwise sequentially Markovian coalescent analysis
+        - Main result directory
+            ```
+            Path_to_out_directory/04_Population/[running datetime]/EffectiveSize/
+            ```
+   
         - Effective Size plot
             
             ```
             Path_to_out_directory/04_Population/[running datetime]/EffectiveSize/psmc_plot.pdf
-            
             ```
             
-    10. Multiple sequentially Markovian coalescent analysis (MSMC)
+    (10). Multiple sequentially Markovian coalescent analysis
+        - Main result directory
+            ```
+            Path_to_out_directory/04_Population/[running datetime]/MSMC/
+            ```
+   
         - Effective Size plot
             
             ```
-            /Path_to_out_directory/04_Population/[running datetime]/MSMC/MSMC.pdf
-            
+            Path_to_out_directory/04_Population/[running datetime]/MSMC/MSMC.pdf
             ```
             
-    11. Fixation index analysis (Fst)
+    (11). Fixation index analysis
+        - Main result directory
+            ```
+            Path_to_out_directory/04_Population/[running datetime]/Fst/
+            ```
+   
         - Fixation index results visualized in manhatton plot figures
             
             ```
             #pairwise comparison
-            /Path_to_out_directory/04_Population/[running datetime]/Fst/[comparing pair information]/[comparing pair information].pdf
+            Path_to_out_directory/04_Population/[running datetime]/Fst/[comparing pair information]/[comparing pair information].pdf
             
             #single population vs all other populations, user combination
-            /Path_to_out_directory/04_Population/[running datetime]/Fst/[comparing information]/Fst_result.pdf
-            
+            Path_to_out_directory/04_Population/[running datetime]/Fst/[comparing information]/Fst_result.pdf
             ```
             
         - Significant regions results of Fst analysis
