@@ -66,7 +66,9 @@
         ```
         
 4. Population analysis
+   
     (1). Principal component analysis by PLINK v 1.9
+   
         - Main result directory
 
             ```
@@ -86,6 +88,7 @@
             ```
             
     (2). Principal component analysis by PLINK v 2.0
+   
         - Main result directory
             ```
             Path_to_out_directory/04_Population/[running datetime]/Plink2/
@@ -104,6 +107,7 @@
             ```
             
     (3). Phylogenetic tree analysis
+   
         - Main result directory
             ```
             Path_to_out_directory/04_Population/[running datetime]/PhylogeneticTree/
@@ -123,6 +127,7 @@
             ```
             
     (4). Population tree analysis
+   
         - Main result directory
             ```
             Path_to_out_directory/04_Population/[running datetime]/Treemix/
@@ -135,6 +140,7 @@
             ```
             
     (5). Population structure analysis
+   
         - Main result directory
             ```
             Path_to_out_directory/04_Population/[running datetime]/Structure/
@@ -153,6 +159,7 @@
             ```
             
     (6). Linkage disequilibrium decay analysis
+   
         - Main result directory
             ```
             Path_to_out_directory/04_Population/[running datetime]/LdDecay/
@@ -165,6 +172,7 @@
             ```
             
     (7). Selective sweep analysis
+   
         - Main result directory
             ```
             Path_to_out_directory/04_Population/[running datetime]/SweepFinder2/
@@ -183,6 +191,7 @@
             ```
             
     (8). Population admixture analysis
+   
         - Main result directory
             ```
             Path_to_out_directory/04_Population/[running datetime]/AdmixtureProportion/
@@ -198,6 +207,7 @@
             ```
             
     (9). Pairwise sequentially Markovian coalescent analysis
+   
         - Main result directory
             ```
             Path_to_out_directory/04_Population/[running datetime]/EffectiveSize/
@@ -210,6 +220,7 @@
             ```
             
     (10). Multiple sequentially Markovian coalescent analysis
+   
         - Main result directory
             ```
             Path_to_out_directory/04_Population/[running datetime]/MSMC/
@@ -222,6 +233,7 @@
             ```
             
     (11). Fixation index analysis
+   
         - Main result directory
             ```
             Path_to_out_directory/04_Population/[running datetime]/Fst/
