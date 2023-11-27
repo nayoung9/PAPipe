@@ -7,14 +7,12 @@
         ```
         Path_to_out_directory/00_ReadQC/QC_Report_Before_Trimming/[population]/[sample]_1_fastqc.html
         Path_to_out_directory/00_ReadQC/QC_Report_Before_Trimming/[population]/[sample]_2_fastqc.html
-        
         ```
 
     - MultiQC summarized QC results for populations before trimming
         
         ```
-        /Path_to_out_directory/00_ReadQC/QC_Report_Before_Trimming/[population]/multiqc_report.html
-        
+        Path_to_out_directory/00_ReadQC/QC_Report_Before_Trimming/[population]/multiqc_report.html
         ```
         
     - QC results for all samples after trimming
@@ -22,14 +20,12 @@
         ```
         Path_to_out_directory/00_ReadQC/QC_Report_After_Trimming/[population]/[sample]_1_fastqc.html
         Path_to_out_directory/00_ReadQC/QC_Report_After_Trimming/[population]/[sample]_2_fastqc.html
-        
         ```
 
     - MultiQC summarized QC results for populations after trimming
         
         ```
-        /Path_to_out_directory/00_ReadQC/QC_Report_After_Trimming/[population]/multiqc_report.html
-        
+        Path_to_out_directory/00_ReadQC/QC_Report_After_Trimming/[population]/multiqc_report.html
         ```
 
     - Trimmed read data for each sample
@@ -37,7 +33,6 @@
         ```
         Path_to_out_directory/00_ReadQC/TrimmedData/[sample]_1_val_1.fq.gz
         Path_to_out_directory/00_ReadQC/TrimmedData/[sample]_2_val_2.fq.gz
-        
         ```
         
 2. Read alignment data
@@ -45,7 +40,6 @@
         
         ```
         Path_to_out_directory/01_readMapping/04.ReadRegrouping/[population]_[sample].addRG.marked.sort.bam
-        
         ```
         
 3. Variant call data
@@ -53,7 +47,6 @@
         
         ```
         Path_to_out_directory/02_VariantCalling/VariantCalling/All.variant.combined.GT.SNP.flt.vcf.gz
-        
         ```
         
 3. Post-processed data
@@ -62,7 +55,6 @@
         ```
         Path_to_out_directory/03_Postprocessing/Hapmap/All.variant.combined.GT.SNP.flt.hapmap
         Path_to_out_directory/03_Postprocessing/plink/ALL.*
-        
         ```
         
 4. Population analysis
@@ -73,7 +65,6 @@
 
             ```
             Path_to_out_directory/04_Population/[running datetime]/PCA/
-   
             ```
    
         - PCA results
@@ -88,7 +79,7 @@
             Path_to_out_directory/04_Population/[running datetime]/PCA/all.PCA.pdf
             ```
             
-    (2). Principal component analysis by PLINK v 2.0
+    - Principal component analysis by PLINK v 2.0
    
         - Main result directory
             ```
@@ -107,7 +98,7 @@
             Path_to_out_directory/04_Population/[running datetime]/Plink2/all.PCA.pdf
             ```
             
-    (3). Phylogenetic tree analysis
+    - Phylogenetic tree analysis
    
         - Main result directory
             ```
@@ -127,7 +118,7 @@
             Path_to_out_directory/04_Population/[running datetime]/PhylogeneticTree/snphylo.ml.png
             ```
             
-    (4). Population tree analysis
+    - Population tree analysis
    
         - Main result directory
             ```
@@ -140,7 +131,7 @@
             Path_to_out_directory/04_Population/[running datetime]/Treemix/Treemix.results.pdf
             ```
             
-    (5). Population structure analysis
+    - Population structure analysis
    
         - Main result directory
             ```
@@ -159,7 +150,7 @@
             Path_to_out_directory/04_Population/[running datetime]/Structure/CLUMPAK/job_100_pipeline_summary.pdf
             ```
             
-    (6). Linkage disequilibrium decay analysis
+    - Linkage disequilibrium decay analysis
    
         - Main result directory
             ```
@@ -172,7 +163,7 @@
             Path_to_out_directory/04_Population/[running datetime]/LdDecay/[maxDist]/Plot/out.pdf
             ```
             
-    (7). Selective sweep analysis
+    - Selective sweep analysis
    
         - Main result directory
             ```
@@ -191,7 +182,7 @@
             Path_to_out_directory/04_Population/[running datetime]/SweepFinder2/[population]/[population].[chromosome].SF2out
             ```
             
-    (8). Population admixture analysis
+    - Population admixture analysis
    
         - Main result directory
             ```
@@ -207,7 +198,7 @@
             Path_to_out_directory/04_Population/[running datetime]/AdmixtureProportion/admixtools_Dstat/Dstat.out
             ```
             
-    (9). Pairwise sequentially Markovian coalescent analysis
+    - Pairwise sequentially Markovian coalescent analysis
    
         - Main result directory
             ```
@@ -220,7 +211,7 @@
             Path_to_out_directory/04_Population/[running datetime]/EffectiveSize/psmc_plot.pdf
             ```
             
-    (10). Multiple sequentially Markovian coalescent analysis
+    - Multiple sequentially Markovian coalescent analysis
    
         - Main result directory
             ```
@@ -233,7 +224,7 @@
             Path_to_out_directory/04_Population/[running datetime]/MSMC/MSMC.pdf
             ```
             
-    (11). Fixation index analysis
+    - Fixation index analysis
    
         - Main result directory
             ```
