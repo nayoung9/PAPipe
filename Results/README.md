@@ -67,12 +67,13 @@
         
 4. Population analysis
    
-    **Principal component analysis by PLINK v 1.9**
+    ***Principal component analysis by PLINK v 1.9***
    
         - Main result directory
 
             ```
             Path_to_out_directory/04_Population/[running datetime]/PCA/
+   
             ```
    
         - PCA results
