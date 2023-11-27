@@ -67,7 +67,7 @@
         
 4. Population analysis
    
-    (1). Principal component analysis by PLINK v 1.9
+    **Principal component analysis by PLINK v 1.9**
    
         - Main result directory
 
