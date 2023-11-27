@@ -19,7 +19,7 @@ sudo usermod -aG docker $USER
 **3. Downloading and loading the Docker image file** 
 
 ```bash
-wget http://bioinfo.konkuk.ac.kr/PAPipe/bin/PAPipe.tar.gz    # Download the Docker image file
+wget http://bioinfo.konkuk.ac.kr/PAPipe/PAPipe.tar.gz    # Download the Docker image file
 docker load -i ./PAPipe.tar.gz    # Load the Docker image file
 docker image ls    # Check if the image loaded well ("REPOSITORY:pap_docker, TAG:latest" must be shown)
 ```
