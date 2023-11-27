@@ -2,12 +2,12 @@
 
 ### Trimmed read data
 
-    - QC results for all samples before trimming
-        
-        ```
-        Path_to_out_directory/00_ReadQC/QC_Report_Before_Trimming/[population]/[sample]_1_fastqc.html
-        Path_to_out_directory/00_ReadQC/QC_Report_Before_Trimming/[population]/[sample]_2_fastqc.html
-        ```
+- QC results for all samples before trimming
+    
+    ```
+    Path_to_out_directory/00_ReadQC/QC_Report_Before_Trimming/[population]/[sample]_1_fastqc.html
+    Path_to_out_directory/00_ReadQC/QC_Report_Before_Trimming/[population]/[sample]_2_fastqc.html
+    ```
 
     - MultiQC summarized QC results for populations before trimming
         
