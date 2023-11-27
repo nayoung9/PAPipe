@@ -105,7 +105,7 @@
     Path_to_out_directory/04_Population/[running datetime]/PhylogeneticTree/
     ```
 
-- .NEWICK formatted phylogenetic tree
+- NEWICK formatted phylogenetic tree
     
     ```
     Path_to_out_directory/04_Population/[running datetime]/PhylogeneticTree/snphylo.ml.txt
@@ -244,9 +244,9 @@
     
     ```
     #pairwise comparison
-    /Path_to_out_directory/04_Population/[running datetime]/Fst/[comparing pair information]/[comparing pair information].sig.region.txt
+    Path_to_out_directory/04_Population/[running datetime]/Fst/[comparing pair information]/[comparing pair information].sig.region.txt
 
     #single population vs all other populations, user combination
-    /Path_to_out_directory/04_Population/[running datetime]/Fst/[comparing information]/Fst_result.sig.region.txt
+    Path_to_out_directory/04_Population/[running datetime]/Fst/[comparing information]/Fst_result.sig.region.txt
     
     ```
